@@ -36,6 +36,40 @@
   /*border: 3px solid white;*/
 }
 
+form {
+  /*margin-top: 50px;*/
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-family: 'SF-Pro-Text-Regular';
+  font-size: 12px;
+  box-sizing: border-box;
+  /*margin-bottom: 16px;*/
+}
+
+input {
+  height:15px;
+}
+
+form .engage {
+  background: #FF9E1A;
+  border-radius: 100px;
+  border: 0px;
+  font-family: 'SF-Pro-Text-SemiBold';
+  font-size: 12px;
+}
+
+form .engage:hover {
+  background-color: #313131;
+  cursor: pointer;
+}
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

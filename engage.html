@@ -63,29 +63,29 @@ body, html {
   <div class="section engage">
     <div class="container">
       <div class="blog">
-        <h1 class="section-heading">What's your cause?</h1>
-        <form>
+        <h1 class="section-heading">What's your calling?</h1>
+        <form id="engage-form" method="post" action="handler.php">
           <div class="row">
             <div class="three columns">
-              <label for="exampleNameInput">First Name *</label>
-              <input class="u-full-width" type="email" id="exampleEmailInput">
+              <!--<label for="exampleNameInput">First Name *</label>-->
+              <input name="firstname" type="text" class="form-control" placeholder="First Name *" required>
             </div>
             <div class="three columns">
-              <label for="exampleNameInput">Last Name *</label>
-              <input class="u-full-width" type="email" id="exampleEmailInput">
+              <!--<label for="exampleNameInput">Last Name *</label>-->
+              <input name="lastname" type="text" class="form-control" placeholder="Last Name *" required>
             </div>
             <div class="six columns">
-              <label for="exampleEmailInput">Email Address *</label>
-              <input class="u-full-width" type="email" id="exampleEmailInput">
+              <!--<label for="exampleEmailInput">Email Address *</label>-->
+              <input name="email" type="email" class="form-control" placeholder="Email Address *" required>
             </div>
           </div>
-          <label for="exampleMessage">Your Message *</label>
-          <textarea class="u-full-width" style="height:100px" id="exampleMessage"></textarea>
+          <!--<label for="exampleMessage">Your Message *</label>-->
+          <textarea name="message" class="form-control" style="height:50px" placeholder="What's your Calling? *" required></textarea>
           <!--<label class="example-send-yourself-copy">
           <input type="checkbox"><span class="label-body">Send a copy to yourself</span>
         </label>-->
-          <input class="button" type="submit" value="S U B M I T">
-          <a class='button' href='engage.html'>S U B M I T</a>
+          <input type="submit" class="button" value="S U B M I T">
+          <!--<a class='button' href='engage.html'>S U B M I T</a>-->
         </form>
       </div>
     </div>
