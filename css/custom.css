@@ -49,9 +49,9 @@ form {
   border-bottom: 1px solid gray;
   color: #fff;
   font-family: 'SF-Pro-Text-Regular';
-  font-size: 12px;
-  /*box-sizing: border-box;
-  margin-bottom: 16px;*/
+  font-size: 14px;
+  margin-bottom: 10px;
+  /*box-sizing: border-box;*/
 }
 
 input {

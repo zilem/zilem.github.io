@@ -263,8 +263,8 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  height: 24px;
+  padding: 0px 0px; /* The 6px vertically centers text on FF, ignored by Webkit */
   /*background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
@@ -285,7 +285,7 @@ textarea {
 textarea {
   min-height: 65px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 0px; }
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -299,6 +299,7 @@ select:focus {
   outline: 0; }
 label,
 legend {
+  color: gray;
   display: block;
   margin-bottom: .5rem;
   font-weight: 600; }
