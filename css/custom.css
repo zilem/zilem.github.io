@@ -1,0 +1,324 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  background: #FF9E1A;
+  border-radius: 100px;
+  border: 0px;
+  font-family: 'SF-Pro-Text-SemiBold';
+  font-size: 12px;
+}
+
+.engagebutton {
+  font-family: 'SF-Pro-Text-Regular';
+  border: 3px solid #FF9E1A;
+  border-radius: 100px;
+  /*border-color: #FF9E1A;
+  background-color: #FF9E1A;*/
+  color: #fff;
+  padding: 5px 20px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+
+#menu {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0em;
+  width: 100%;
+}
+
+#engagemenu {
+  color: #313131;
+  background-color:#FF9E1A;
+  /*border: 3px solid white;*/
+}
+
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.minisection {
+  padding: 6rem 0 0;
+  text-align: center;
+}
+.blog {
+  padding: 0rem 0 0rem;
+  text-align: left;
+  z-index: 9999;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+.footer {
+  padding: 1rem 0 1rem;
+  text-align: center;
+  opacity: 0.88;
+  font-family: 'SF-Pro-Text-Regular';
+  font-size: 14px;
+}
+
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.phones {
+  position: relative;
+}
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
+}
+
+/* Article Collapse
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.show, .hide {
+  position: absolute;
+  bottom: -1em;
+  z-index: 100;
+  text-align: center;
+}
+.hide {display: none;}
+.show:target {display: none;}
+.show:target ~ .hide {display: block;}
+.show:target ~ .article {
+   max-height: 2000px;
+}
+.show:target ~ .fade {
+  margin-top: 0;
+}
+.article {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.fade {
+  background: linear-gradient(transparent, white 100%);
+  height: 100px;
+  margin-top: -100px;
+  text-align: center;
+  position: relative;
+}
+.fade2 {
+  background-color:grey;opacity:0.3;
+  height: 100px;
+  margin-top: -100px;
+  text-align: center;
+  position: relative;
+
+}
+
+#show  {
+  text-align: center;
+  }
+#hide  {
+  text-align: center;
+  }
+
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Background Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.landing, .intro, .truestories, .intersectionality, .pragmatism, .meaning, .cinema,
+.bio, .mystory1, .mystory2, .mystory3, .mystory4, .mystory5,
+.projects, .omm, .gospace,
+.engage {
+  border-bottom: 1px solid #ddd;
+  background-size: cover;
+  /*background-color: #fff;*/
+  color: #fff;
+  padding-bottom: 5rem;
+  z-index: 1;
+}
+.landing {
+  background-image: url('../images/Black_Windmill_1280x810.jpg');
+}
+.intro {
+  background-color: #fff;
+  color: #313131;
+}
+.truestories {
+  background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
+}
+.intersectionality {
+  background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
+}
+.pragmatism {
+  background-image: url('../images/Abandoned_Airplane_Apocalypse_1280x720.jpg');
+}
+.meaning {
+  background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854.jpg');
+}
+.cinema {
+  background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
+}
+.bio {
+  background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');
+}
+.mystory1 {
+  background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670.jpg');
+}
+.mystory2 {
+  background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854.jpg');
+}
+.mystory3 {
+  background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720.jpg');
+}
+.mystory4 {
+  background-image: url('../images/White_Gray_Teal_Air_Bus Under_1280x720.jpg');
+}
+.mystory5 {
+  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853.jpg');
+}
+.projects {
+  background-image: url('../images/Festival_Music_Rock_Sound_1280x854.jpg');
+}
+.omm {
+  background-image: url('../images/God_Bless_You.png');
+}
+.gospace {
+  background-image: url('../images/Spacesuit.jpg');
+}
+.engage {
+  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
+}
+
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../images/values-bg.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .minisection {
+    padding: 6rem 0 0;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .minisection {
+    padding: 6rem 0 0;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description, {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog-description, {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+    text-align: left;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .minisection {
+    padding: 6rem 0 0;
+  }
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
