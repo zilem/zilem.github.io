@@ -50,8 +50,8 @@ form {
   color: #fff;
   font-family: 'SF-Pro-Text-Regular';
   font-size: 12px;
-  box-sizing: border-box;
-  /*margin-bottom: 16px;*/
+  /*box-sizing: border-box;
+  margin-bottom: 16px;*/
 }
 
 input {
