@@ -10,6 +10,7 @@
 
 .button1 {
   background-color: #fff;
+
 }
 
 .engagebutton {
@@ -90,6 +91,11 @@ form .engage:hover {
   text-align: left;
   z-index: 9999;
 }
+.blogr {
+  padding: 0rem 0 0rem;
+  text-align: right;
+  z-index: 9999;
+}
 .section-heading,
 .section-description {
   margin-bottom: 1.2rem;
@@ -119,11 +125,16 @@ form .engage:hover {
 
 /* Article Collapse
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-#module {
-  /*width: 500px;
-  font-size: 14px;
-  line-height: 1.5;*/
-}
+.collapse{display:none}
+.collapse.in{display:block}
+tr.collapse.in{display:table-row}
+tbody.collapse.in{display:table-row-group}
+.collapsing{position:relative;height:0;overflow:hidden;
+  -webkit-transition-timing-function:ease;-o-transition-timing-function:ease;
+  transition-timing-function:ease;-webkit-transition-duration:.35s;
+  -o-transition-duration:.35s;transition-duration:.35s;
+  -webkit-transition-property:height,visibility;
+  -o-transition-property:height,visibility;transition-property:height,visibility}
 
 #module button.collapsed:after  {
   content: 'M O R E';
