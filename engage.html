@@ -10,7 +10,7 @@
   <meta name='description' content='I discover real stories.
   Make them moving & inspiring. Create meaningful cinema to engage the world.'>
 
-  <meta property='og:title' content='Zi Lem, Screenwriter-Filmmaker.'/>
+  <meta property='og:title' content='Zi Lem, Screenwriter-Filmmaker'/>
   <meta property='og:url' content='http://zilem.studio'/>
   <meta property='og:description' content='Create Meaningful Cinema to Engage the World.'>
   <meta property='og:image' content='images/IMDB_7362r_bw_300x300.jpg'>
@@ -76,28 +76,28 @@ body, html {
     <div class="containerengage">
       <div class="blog">
         <h2 class="section-heading">What engages you?</h2>
-        <form method="post" action="handler.php">
+        <form method="post" action="https://formspree.io/story@zilem.studio"><!--action="handler.php"-->
           <div class="row">
-            <div class="three columns">
-              <label>First Name *</label>
+            <div class="six columns">
+              <label><font color="#fff">First Name *</font></label>
               <input name="firstname" type="text" class="form-input" required>
             </div>
-            <div class="three columns">
-              <label>Last Name *</label>
+            <div class="six columns">
+              <label><font color="#fff">Last Name *</font></label>
               <input name="lastname" type="text" class="form-input" required>
             </div>
-            <div class="six columns">
-              <label>Email Address *</label>
-              <input name="email" type="email" class="form-input" required>
-            </div>
-            <!--<div class="six columns">
-              <div class="input-phone">
-              <label>Whatsapp Number</label>
-              <input name="whatsapp" type="tel" class="form-input" required>
-              </div>
-            </div>-->
           </div>
-          <label>Your Message *</label>
+          <div class="row">
+            <div class="six columns">
+              <label><font color="#fff">Email Address *</font></label>
+              <input name="_replyto" type="email" class="form-input" required>
+            </div>
+            <div class="six columns">
+              <label><font color="#fff">Whatsapp (please include country code)</font></label>
+              <input name="whatsapp" type="tel" class="form-input" placeholder="+1 323 123 4567">
+            </div>
+          </div>
+          <label><font color="#fff">Your Message *</font></label>
           <textarea name="message" class="form-input" style="height:50px" required></textarea>
           <!--<label class="example-send-yourself-copy">
           <input type="checkbox"><span class="label-body">Send a copy to yourself</span>
