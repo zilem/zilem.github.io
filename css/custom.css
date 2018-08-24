@@ -8,6 +8,10 @@
   font-size: 12px;
 }
 
+.button1 {
+  background-color: #fff;
+}
+
 .engagebutton {
   font-family: 'SF-Pro-Text-Regular';
   border: 3px solid #FF9E1A;
@@ -115,6 +119,29 @@ form .engage:hover {
 
 /* Article Collapse
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+#module {
+  /*width: 500px;
+  font-size: 14px;
+  line-height: 1.5;*/
+}
+
+#module button.collapsed:after  {
+  content: 'M O R E';
+  font-family: 'SF-Pro-Text-Regular';
+  color: #313131;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#module button:not(.collapsed):after {
+  content: 'L E S S';
+  font-family: 'SF-Pro-Text-Regular';
+  color: #313131;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
 .show, .hide {
   position: absolute;
   bottom: -1em;
