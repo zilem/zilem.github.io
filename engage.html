@@ -7,11 +7,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Zi LEM, Screenwriter-Filmmaker</title>
-  <meta name='description' content='I discover real stories. Make them moving & inspiring. Create meaningful cinema that engages the world.'>
+  <meta name='description' content='I discover real stories.
+  Make them moving & inspiring. Create meaningful cinema to engage the world.'>
 
   <meta property='og:title' content='Zi Lem, Screenwriter-Filmmaker.'/>
   <meta property='og:url' content='http://zilem.studio'/>
-  <meta property='og:description' content='Create Meaningful Cinema. Engage the World Together.'>
+  <meta property='og:description' content='Create Meaningful Cinema to Engage the World.'>
   <meta property='og:image' content='images/IMDB_7362r_bw_300x300.jpg'>
   <meta property='og:type' content='video.movie'/>
 
@@ -28,10 +29,21 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/intlInputPhone.min.css">
+
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="js/intlInputPhone.min.js"></script>
+  <script type="text/javascript">
+      $(
+          function(){
+            $('.input-phone').intlInputPhone();
+          }
+          );
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -61,29 +73,32 @@ body, html {
 
   <!--<div class="bgimg-1">-->
   <div class="section engage">
-    <div class="container">
+    <div class="containerengage">
       <div class="blog">
-        <h1 class="section-heading">What's your calling?</h1>
+        <h2 class="section-heading">What engages you?</h2>
         <form method="post" action="handler.php">
           <div class="row">
             <div class="three columns">
-              <label for="exampleNameInput">First Name *</label>
-              <input name="firstname" type="text" class="form-control" required>
-
+              <label>First Name *</label>
+              <input name="firstname" type="text" class="form-input" required>
             </div>
             <div class="three columns">
-              <label for="exampleNameInput">Last Name *</label>
-              <input name="lastname" type="text" class="form-control" required>
-
+              <label>Last Name *</label>
+              <input name="lastname" type="text" class="form-input" required>
             </div>
             <div class="six columns">
-              <label for="exampleEmailInput">Email Address *</label>
-              <input name="email" type="email" class="form-control" required>
-
+              <label>Email Address *</label>
+              <input name="email" type="email" class="form-input" required>
             </div>
+            <!--<div class="six columns">
+              <div class="input-phone">
+              <label>Whatsapp Number</label>
+              <input name="whatsapp" type="tel" class="form-input" required>
+              </div>
+            </div>-->
           </div>
-          <label for="exampleMessage">Your Message *</label>
-          <textarea name="message" class="form-control" style="height:50px" required></textarea>
+          <label>Your Message *</label>
+          <textarea name="message" class="form-input" style="height:50px" required></textarea>
           <!--<label class="example-send-yourself-copy">
           <input type="checkbox"><span class="label-body">Send a copy to yourself</span>
         </label>-->
@@ -102,6 +117,7 @@ body, html {
   <div class="footer">
     <font color="#fff">Copyright © 2018 Zi Lem. All Rights Reserved.</font>
   </div>
+
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>

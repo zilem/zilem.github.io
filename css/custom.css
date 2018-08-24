@@ -41,7 +41,7 @@ form {
   transition: all 4s ease-in-out;
 }
 
-.form-control {
+.form-input {
   width: 100%;
   background: transparent;
   border: none;
@@ -193,7 +193,7 @@ form .engage:hover {
   z-index: 1;
 }
 .landing {
-  background-image: url('../images/Black_Windmill_1280x810.jpg');
+  background-image: url('../images/Green_Pine_Trees_Covered With_1280x854.jpg');
 }
 .intro {
   background-color: #FCF9EF;
