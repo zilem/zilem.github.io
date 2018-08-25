@@ -9,8 +9,25 @@
 }
 
 .button1 {
-  background-color: #fff;
+  background-color: #313131;
+  border: 1px solid #fff;
+  color:#fff;
+}
 
+#module button.collapsed:after  {
+  content: 'M O R E';
+  font-family: 'SF-Pro-Text-Regular';
+  font-size: 12px;
+  text-decoration: none;
+  color:#fff;
+}
+
+#module button:not(.collapsed):after {
+  content: 'L E S S';
+  font-family: 'SF-Pro-Text-Regular';
+  font-size: 12px;
+  text-decoration: none;
+  color:#fff;
 }
 
 .engagebutton {
@@ -133,23 +150,6 @@ tbody.collapse.in{display:table-row-group}
   -webkit-transition-property:height,visibility;
   -o-transition-property:height,visibility;transition-property:height,visibility}
 
-#module button.collapsed:after  {
-  content: 'M O R E';
-  font-family: 'SF-Pro-Text-Regular';
-  color: #313131;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-#module button:not(.collapsed):after {
-  content: 'L E S S';
-  font-family: 'SF-Pro-Text-Regular';
-  color: #313131;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-
 .show, .hide {
   position: absolute;
   bottom: -1em;
@@ -218,7 +218,8 @@ tbody.collapse.in{display:table-row-group}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .intro, .truestories, .intersectionality, .pragmatism, .meaning, .cinema,
 .multidiscipline, .adrift, .inspire, .move, .calling, .meaning2,
-.projects, .omm, .gospace,
+.projects, .omm, .spaceman,
+.gospace,
 .engage {
   border-bottom: 1px solid #ddd;
   background-size: cover;
@@ -280,8 +281,16 @@ tbody.collapse.in{display:table-row-group}
 .omm {
   background-image: url('../images/God_Bless_You.png');
 }
-.gospace {
+.spaceman {
   background-image: url('../images/Spacesuit.jpg');
+}
+.gospace {
+  background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854.jpg');
+}
+.prescient {
+  background-image: url('../images/PRESCIENT_R02_01.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .engage {
   background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
