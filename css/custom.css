@@ -78,14 +78,11 @@ form .engage:hover {
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.section {
+.section, .minisection {
   padding: 6rem 0 7rem;
   text-align: center;
 }
-.minisection {
-  padding: 6rem 0 0;
-  text-align: center;
-}
+
 .blog {
   padding: 0rem 0 0rem;
   text-align: left;
@@ -220,7 +217,7 @@ tbody.collapse.in{display:table-row-group}
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .intro, .truestories, .intersectionality, .pragmatism, .meaning, .cinema,
-.bio, .mystory1, .mystory2, .mystory3, .mystory4, .mystory5,
+.multidiscipline, .adrift, .tribe, .connect, .calling, .meaning2,
 .projects, .omm, .gospace,
 .engage {
   border-bottom: 1px solid #ddd;
@@ -244,7 +241,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
 }
 .pragmatism {
-  background-image: url('../images/Abandoned_Airplane_Apocalypse_1280x720.jpg');
+  background-image: url('../images/I-borghesi-di-Calais-1884-ca.-1889.jpg');
 }
 .meaning {
   background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854.jpg');
@@ -253,21 +250,28 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
 }
 .bio {
-  background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');
+  /*background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');*/
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+  z-index: 1;
 }
-.mystory1 {
+.multidiscipline {
+  background-image: url('../images/Hero.01_10_46_23.Still003.jpg');
+}
+.adrift {
   background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670.jpg');
 }
-.mystory2 {
+.inspiration {
   background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854.jpg');
 }
-.mystory3 {
+.connect {
   background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720.jpg');
 }
-.mystory4 {
+.calling {
   background-image: url('../images/White_Gray_Teal_Air_Bus Under_1280x720.jpg');
 }
-.mystory5 {
+.meaning2 {
   background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853.jpg');
 }
 .projects {
@@ -301,7 +305,7 @@ tbody.collapse.in{display:table-row-group}
     padding: 12rem 0 11rem;
   }
   .minisection {
-    padding: 6rem 0 0;
+    padding: 8rem 0 7rem;
   }
   .hero {
     padding-bottom: 12rem;
@@ -340,7 +344,7 @@ tbody.collapse.in{display:table-row-group}
     padding: 14rem 0 15rem;
   }
   .minisection {
-    padding: 6rem 0 0;
+    padding: 10rem 0 10rem;
   }
   .hero {
     padding: 16rem 0 14rem;
@@ -377,7 +381,7 @@ tbody.collapse.in{display:table-row-group}
     padding: 20rem 0 19rem;
   }
   .minisection {
-    padding: 6rem 0 0;
+    padding: 12rem 0 12rem;
   }
   .hero {
     padding: 22rem 0;
