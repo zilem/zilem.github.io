@@ -43,6 +43,146 @@ body, html {
   background-color: #313131;
   color: #fff;
 }
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*.column {
+  float: left;
+  width: 25%;
+}*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  /*max-width: 1200px;*/
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 </style>
 
 </head>
@@ -63,18 +203,17 @@ body, html {
   <div class="section prescient">
     <div class="container">
       <h1 class="section-heading">Prescient</h1>
+      <p><font color=#FF9E1A><b>"A smart innovative sci-fi drama."</b></font> - Buffalo Rising</p>
       <div class="blog">
-        <p><font color=#FF9E1A><b>A geneticist searches for the gene that triggers
-        his previsions of impending deaths.</b></font></p>
 
         <p class="blog-description">Before I started working on feature films
-          based on true stories, I made a sci-fi drama in Niagara Falls that won
-          the Special Jury Prize for Best WNY Feature at BIFF. Click
-          <a href="http://www.prescientmovie.com"><font color="#fff">here</font></a>
-          for more information.</p>
+        based on true stories, I made a sci-fi drama in Niagara Falls that won
+        the Special Jury Prize for Best WNY Feature at BIFF. Click
+        <a href="http://www.prescientmovie.com"><font color="#fff">here</font></a>
+        for more information.</p>
 
-        <p><font color=#FF9E1A><b>"A smart innovative sci-fi drama."</b></font>
-          - Buffalo Rising</p>
+        <p><font color=#FF9E1A><b>A geneticist searches for the gene that triggers
+        his previsions of impending deaths.</b></font></p>
         <br>
         <!--<style>.embed-container { position: relative; padding-bottom: 56.25%;
           height: 0; overflow: hidden; max-width: 100%; }
@@ -85,9 +224,144 @@ body, html {
           <iframe src='https://player.vimeo.com/video/154556626' frameborder='0' allowfullscreen></iframe>
         </div>-->
       </div>
+
+
+  <div class="row">
+    <div class="one-third column">
+      <img src="images/Prescient01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient02.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient03.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"><br><br>
     </div>
   </div>
 
+  <div class="row">
+    <div class="one-third column">
+      <img src="images/Prescient05.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient06.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient08.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"><br><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="one-third column">
+      <img src="images/Prescient13.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient14.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient17.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor"><br><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="one-third column">
+      <img src="images/Prescient22.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient23.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient24.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor"><br><br>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="one-third column">
+      <img src="images/Costume01.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient26.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor"><br><br>
+    </div>
+    <div class="one-third column">
+      <img src="images/Prescient27.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor"><br><br>
+    </div>
+  </div>
+
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides"><img src="images/Prescient01.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient02.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient03.jpg" style="width:100%"></div>
+
+      <div class="mySlides"><img src="images/Prescient05.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient06.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient08.jpg" style="width:100%"></div>
+
+      <div class="mySlides"><img src="images/Prescient13.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient14.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient17.jpg" style="width:100%"></div>
+
+      <div class="mySlides"><img src="images/Prescient22.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient23.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient24.jpg" style="width:100%"></div>
+
+      <div class="mySlides"><img src="images/Costume01.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient26.jpg" style="width:100%"></div>
+      <div class="mySlides"><img src="images/Prescient27.jpg" style="width:100%"></div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  function openModal() {
+    document.getElementById('myModal').style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+  }
+
+  var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+
+</div>
+</div>
 
   <div class="footer">
     <font color="#fff">Copyright © 2018 Zi Lem. All Rights Reserved.</font>
