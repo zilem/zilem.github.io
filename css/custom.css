@@ -217,7 +217,7 @@ tbody.collapse.in{display:table-row-group}
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .intro, .truestories, .intersectionality, .pragmatism, .meaning, .cinema,
-.multidiscipline, .adrift, .inspire, .move, .calling, .meaning2,
+.multidiscipline, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman,
 .gospace,
 .engage {
@@ -260,13 +260,13 @@ tbody.collapse.in{display:table-row-group}
 .multidiscipline {
   background-image: url('../images/Hero.01_10_46_23.Still003.jpg');
 }
-.adrift {
+.meaningless {
   background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670.jpg');
 }
-.inspire {
+.inspiration {
   background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854.jpg');
 }
-.move {
+.empathy {
   background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720.jpg');
 }
 .calling {
