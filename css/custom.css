@@ -166,11 +166,10 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .intro,  .meaning, .cinema,
+.landing, .intro, .meaning, .cinema,
 .multidiscipline, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.projects, .omm, .spaceman, .gospace, .prescient,
-.blog, .truestories, .intersectionality, .pragmatism,
-.engage {
+.projects, .omm, .spaceman, .gospace, .prescient, .engage,
+.zaxis, .truestories, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
@@ -233,22 +232,27 @@ tbody.collapse.in{display:table-row-group}
   background-repeat: no-repeat;
   background-size: auto;
 }
-.blog {
+.engage {
+  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
+}
+.zaxis {
   background-image: url('../images/Fire_Stunt_Fakir_Flames_1280x854.jpg');
 }
 .truestories {
   background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
 }
+.facts {
+  background-image: url('../images/Sea_Ocean_Hotel_Swimming_Pool_1280x854.jpg');
+}
 .intersectionality {
   background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
+}
+.language {
+  background-image: url('../images/The_Thinker.jpg');
 }
 .pragmatism {
   background-image: url('../images/I-borghesi-di-Calais-1884-ca.-1889.jpg');
 }
-.engage {
-  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
-}
-
 
 
 /* Bigger than 550 */
