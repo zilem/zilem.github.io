@@ -118,6 +118,10 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
+@font-face {font-family: "SF-Pro-Display-Thin";
+      src: url('../fonts/SF/SF-Pro-Display-Thin.otf') format('opentype');}
+@font-face {font-family: "SF-Pro-Display-Ultralight";
+            src: url('../fonts/SF/SF-Pro-Display-Ultralight.otf') format('opentype');}
 
 @font-face {font-family: "SF-Pro-Text-Light";
       src: url('../fonts/SF/SF-Pro-Text-Light.otf') format('opentype');}
@@ -324,7 +328,7 @@ label > .label-body {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
+/*ul {
   list-style: circle inside; }
 ol {
   list-style: decimal inside; }
@@ -338,10 +342,10 @@ ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
   font-size: 90%; }
 li {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem; }*/
 
 /* old menu */
-ul {
+/*ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -353,8 +357,6 @@ ul {
       opacity: .88;
       height: 3.3em;
       width: 100%;
-      /*color: #FFFFFF;
-      letter-spacing: 0.5px;*/
   }
 
   li {
@@ -370,11 +372,10 @@ ul {
   }
 
   /* Change the link color to #111 (black) on hover */
-  li a:hover {
+  /*li a:hover {
       background-color: #111;
       color: #0FA0CE;
-      /*text-decoration: none;*/
-  }
+  }*/
 
 
 /* Code
