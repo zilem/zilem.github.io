@@ -98,7 +98,7 @@ form .engage:hover {
   padding: 7rem 0 7rem;
   text-align: center;
 }
-.blog {
+.para {
   padding: 0rem 0 0rem;
   text-align: left;
   z-index: 9999;
@@ -166,10 +166,10 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .intro, .truestories, .intersectionality, .pragmatism, .meaning, .cinema,
+.landing, .intro,  .meaning, .cinema,
 .multidiscipline, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.projects, .omm, .spaceman,
-.gospace,
+.projects, .omm, .spaceman, .gospace, .prescient,
+.blog, .truestories, .intersectionality, .pragmatism,
 .engage {
   border-bottom: 1px solid #ddd;
   background-size: cover;
@@ -184,15 +184,6 @@ tbody.collapse.in{display:table-row-group}
 .intro {
   background-color: #FCF9EF;
   color: #313131;
-}
-.truestories {
-  background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
-}
-.intersectionality {
-  background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
-}
-.pragmatism {
-  background-image: url('../images/I-borghesi-di-Calais-1884-ca.-1889.jpg');
 }
 .meaning {
   background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854.jpg');
@@ -242,6 +233,18 @@ tbody.collapse.in{display:table-row-group}
   background-repeat: no-repeat;
   background-size: auto;
 }
+.blog {
+  background-image: url('../images/Fire_Stunt_Fakir_Flames_1280x854.jpg');
+}
+.truestories {
+  background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
+}
+.intersectionality {
+  background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
+}
+.pragmatism {
+  background-image: url('../images/I-borghesi-di-Calais-1884-ca.-1889.jpg');
+}
 .engage {
   background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
 }
@@ -271,7 +274,7 @@ tbody.collapse.in{display:table-row-group}
     margin-left: auto;
     margin-right: auto;
   }
-  .blog-description, {
+  .para-description, {
     max-width: 75%;
     margin-left: auto;
     margin-right: auto;
