@@ -169,7 +169,7 @@ tbody.collapse.in{display:table-row-group}
 .landing, .intro, .meaning, .cinema,
 .multidiscipline, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .prescient, .engage,
-.zaxis, .respect, .truestories, .facts, .intersectionality, .language, .pragmatism {
+.zaxis, .respect, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
@@ -246,6 +246,9 @@ tbody.collapse.in{display:table-row-group}
 .truestories {
   background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
 }
+.church {
+  background-image: url('../images/Brown_Jesus_Artwork_1280x854.jpg');
+}
 .facts {
   background-image: url('../images/Sea_Ocean_Hotel_Swimming_Pool_1280x854.jpg');
 }
@@ -253,7 +256,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
 }
 .language {
-  background-color: #FCF9EF;
+  background-color: #8b8589;
   color: #313131;
   /*background-image: url('../images/The_Thinker.jpg');*/
 }
