@@ -104,24 +104,39 @@ body, html {
         <form method="post" action="https://formspree.io/story@zilem.studio"><!--action="handler.php"-->
           <div class="row">
             <div class="six columns">
+              <label><font color="#fff">What's your role? *</font></label>
+              <select name="role" type="text" class="form-input" required>
+                <option><font color="#313131"></font></option>
+                <option value="1">Collaborator</option>
+                <option value="2">Audience</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="six columns">
               <label><font color="#fff">First Name *</font></label>
               <input name="firstname" type="text" class="form-input" required>
             </div>
+
             <div class="six columns">
               <label><font color="#fff">Last Name *</font></label>
               <input name="lastname" type="text" class="form-input" required>
             </div>
           </div>
+
           <div class="row">
             <div class="six columns">
               <label><font color="#fff">Email Address *</font></label>
               <input name="_replyto" type="email" class="form-input" required>
             </div>
+
             <div class="six columns">
               <label><font color="#fff">Whatsapp (please include country code)</font></label>
               <input name="whatsapp" type="tel" class="form-input" placeholder="+1 323 123 4567">
             </div>
           </div>
+
           <label><font color="#fff">Your Message *</font></label>
           <textarea name="message" class="form-input" style="height:50px"
           placeholder="What message do you align yourself with? ;)" required></textarea>
