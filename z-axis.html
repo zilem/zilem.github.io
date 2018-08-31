@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/needsharebutton.css">
   <!--<link rel="stylesheet" href="https://i.icomoon.io/public/temp/d3a8c9b913/UntitledProject/style.css">-->
 
 
@@ -38,6 +39,8 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -130,6 +133,8 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseRespect"
       aria-expanded="false" aria-controls="collapseRespect"></button>
+      &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="bottomCenter" data-share-networks="Mailto,Twitter,Pinterest,Facebook,GooglePlus,Linkedin"></div>
     </div>
   </div>
 
@@ -330,6 +335,15 @@ body, html {
 </div>
 
 <script src="js/index.js"></script>
+
+<script src="js/needsharebutton.js"></script>
+<script>
+  new needShareDropdown(document.getElementById('share-button-1'));
+  new needShareDropdown(document.getElementById('share-button-2'));
+  new needShareDropdown(document.getElementById('share-button-3'));
+  new needShareDropdown(document.getElementById('share-button-4'));
+  new needShareDropdown(document.getElementById('share-button-5'));
+</script>
 
 
 

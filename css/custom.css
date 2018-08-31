@@ -1,30 +1,37 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
-  background: #FF9E1A;
-  border-radius: 100px;
-  border: 0px;
+  height: 38px;
+  padding: 0 20px;
+  /*background: #FF9E1A;
+  border-radius: 10px;
+  border: 0px;*/
   font-family: 'SF-Pro-Text-SemiBold';
-  font-size: 12px;
+  font-size: 14px;
+  background-color: transparent; /*#313131;*/
+  border-bottom: 2px solid #FF9E1A;
+  color:#FF9E1A;
 }
 
 .button1 {
-  background-color: #313131;
-  border: 1px solid #fff;
+  height: 38px;
+  padding: 0px 15px;
+  background-color: transparent; /*#313131;*/
+  border-bottom: 2px solid #fff;
   color:#fff;
 }
 
 #module button.collapsed:after  {
   content: 'M O R E';
-  font-family: 'SF-Pro-Text-Regular';
+  font-family: 'SF-Pro-Text-SemiBold';
   font-size: 12px;
-  text-decoration: none;
+  /*text-decoration: none;*/
   color:#fff;
 }
 
 #module button:not(.collapsed):after {
   content: 'L E S S';
-  font-family: 'SF-Pro-Text-Regular';
+  font-family: 'SF-Pro-Text-SemiBold';
   font-size: 12px;
   text-decoration: none;
   color:#fff;
@@ -178,7 +185,7 @@ tbody.collapse.in{display:table-row-group}
   z-index: 1;
 }
 .landing {
-  background-image: url('../images/Green_Pine_Trees_Covered With_1280x854.jpg');
+  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
 }
 .intro {
   background-color: #FCF9EF;
@@ -233,7 +240,7 @@ tbody.collapse.in{display:table-row-group}
   background-size: auto;
 }
 .engage {
-  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
+  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854.jpg');
 }
 .zaxis {
   background-image: url('../images/BraneWorld.jpg');
