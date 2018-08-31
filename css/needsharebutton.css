@@ -7,13 +7,27 @@
 /* Social icons font
 ***********************************************/
 @font-face {
-  font-family: 'social-icons';
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?38770891');
+  src: url('../font/fontello.eot?38770891#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?38770891') format('woff2'),
+       url('../font/fontello.woff?38770891') format('woff'),
+       url('../font/fontello.ttf?38770891') format('truetype'),
+       url('../font/fontello.svg?38770891#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+  /*font-family: 'social-icons';
   font-weight: normal;
   font-style: normal;
 
   src: url('../font/social.eot?44259375');
-  src: url('../font/social.eot?44259375#iefix') format('embedded-opentype'), url('../font/social.woff?44259375') format('woff'), url('../font/social.ttf?44259375') format('truetype'), url('../font/social.svg?44259375#social') format('svg');
+  src: url('../font/social.eot?44259375#iefix') format('embedded-opentype'), url('../font/social.woff?44259375') format('woff'), url('../font/social.ttf?44259375') format('truetype'), url('../font/social.svg?44259375#social') format('svg');*/
 }
+
+
+
+
 /* Share button
 ***********************************************/
 .need-share-button {
@@ -28,7 +42,7 @@
   visibility: hidden;
   overflow: hidden;
 
-  width: 240px;
+  width: 160px;
 
   -webkit-transition: .3s;
           transition: .3s;
@@ -75,7 +89,7 @@
   text-align: center;
 }
 .need-share-button_link:after {
-  font: normal normal normal 16px/1 'social-icons';
+  font: normal normal normal 16px/1 'fontello'; /*'social-icons';*/
 
   text-align: center;
   text-transform: none;
@@ -196,12 +210,46 @@
 }
 .need-share-button-default .need-share-button_dropdown {
   position: absolute;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
           box-shadow: 0 0 2px rgba(0, 0, 0, .5);
 }
 /* Network buttons
 ***********************************************/
+
+.need-share-button_twitter { color: #00ACEC; }
+.need-share-button_twitter:after { content: '\e001'; } /* '' */
+
+.need-share-button_whatsapp { color: #25D366; }
+.need-share-button_whatsapp:after { content: '\e002'; } /* '' */
+
+.need-share-button_wechat { color: #7BB32E; }
+.need-share-button_wechat:after { content: '\e003'; } /* '' */
+
+.need-share-button_messenger { color: #0084ff; }
+.need-share-button_messenger:after { content: '\e004'; } /* '' */
+
+.need-share-button_facebook { color: #3B5998; }
+.need-share-button_facebook:after { content: '\e005'; } /* '' */
+
+.need-share-button_linkedin { color: #0077B5; }
+.need-share-button_linkedin:after { content: '\e006'; } /* '' */
+
+.need-share-button_googleplus { color: #d44132; }
+.need-share-button_googleplus:after { content: '\e007'; } /* '' */
+
+.need-share-button_mailto { color: #efbe00; }
+.need-share-button_mailto:after { content: '\e008'; } /* '' */
+
+
+
+
+
+
+
+
+
+/*
 .need-share-button_mailto {
   color: #efbe00;
 }
@@ -443,4 +491,4 @@
   color: #fff;
 
   background: #f89c0e;
-}
+}*/
