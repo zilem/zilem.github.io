@@ -132,6 +132,27 @@
 
 				root.popup(url);
 			},
+	  	'googleplus' : function() {
+				var url = 'https://plus.google.com/share?url=' + location.href.replace(location.hash,"") + document.getElementById("myAnchor").text;
+				//var url = root.options.protocol + 'plus.google.com/share?';
+	  		//url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+
+        root.popup(url);
+	  	},
+			'copylink' : function() {
+				var dummy = document.createElement('input'),
+					text = location.href.replace(location.hash,"") + document.getElementById("myAnchor").text;
+
+				document.body.appendChild(dummy);
+				dummy.value = text;
+				dummy.select();
+				document.execCommand('copy');
+				document.body.removeChild(dummy);
+				alert('Link Copied!');
+			},
+
+
+
 			'pinterest' : function() {
 				var url = 'https://pinterest.com/pin/create/bookmarklet/?url=' + location.href.replace(location.hash,"") + document.getElementById("myAnchor").text + '%2F'+ document.getElementById("myArticle").text + byname + '%2F' + '&amp;description=' + document.querySelector("meta[property='og:description']").getAttribute("content");
 				//var url = root.options.protocol + 'pinterest.com/pin/create/bookmarklet/?is_video=false';
@@ -141,17 +162,6 @@
 
 				root.popup(url);
 			},
-	  	'googleplus' : function() {
-				var url = 'https://plus.google.com/share?url=' + location.href.replace(location.hash,"") + document.getElementById("myAnchor").text;
-				//var url = root.options.protocol + 'plus.google.com/share?';
-	  		//url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
-
-        root.popup(url);
-	  	},
-
-
-
-
 	  	'reddit' : function() {
 	  		var url = root.options.protocol + 'www.reddit.com/submit?';
 	  		url += 'url=' + encodeURIComponent(root.options.url);
