@@ -13,7 +13,7 @@
 		var root = this;
 		root.elem = elem;
 		root.elem.className += root.elem.className.length ? ' need-share-button' : 'need-share-button';
-		byname = ' by Zi R. Lem, Screenwriter-Filmmaker '
+		byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A'
 
 		/* Helpers
 		***********************************************/
@@ -75,8 +75,9 @@
 	  		window.location.href = url;
 	  	},
 	  	'twitter' : function() {
-	  		var url = root.options.protocol + 'twitter.com/home?status=';
-	  		url += document.getElementById("myArticle").text + byname + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				var url = 'twitter.com/share?text=' + document.getElementById("myArticle").text + byname + '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				//var url = root.options.protocol + 'twitter.com/home?status=';
+				//url += document.getElementById("myArticle").text + byname + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 
         root.popup(url);
 	  	},
@@ -87,7 +88,7 @@
 				//url += '&description=' + document.getElementById("myArticle").text + byname; //encodeURIComponent(root.options.title);
 
 				root.popup(url);
-			},			
+			},
 			'wechat' : function() {
 				var url = 'chart.apis.google.com/chart?cht=qr&chs=154x154&chld=Q%7C0&chl=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 				//url += '&media=' + encodeURIComponent(root.options.image);
@@ -97,8 +98,8 @@
 				root.popup(url);
 			},
 			'messenger' : function() {
-				var url = 'www.facebook.com/dialog/send?link=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
-				//var url = 'fb-messenger://share?link=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				//var url = 'www.facebook.com/dialog/send?link=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				var url = 'fb-messenger://share?link=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 				//url += '&media=' + encodeURIComponent(root.options.image);
 				//url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 				//url += '&description=' + document.getElementById("myArticle").text + byname; //encodeURIComponent(root.options.title);
@@ -110,23 +111,26 @@
 
 
 	  	'facebook' : function() {
-	  		var url = root.options.protocol + 'www.facebook.com/sharer/share.php?';
-	  		url += 'u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
-	  		url += '&title=' + document.getElementById("myArticle").text + byname; //encodeURIComponent(root.options.title);
+				var url = 'facebook.com/sharer/sharer.php?u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				//var url = root.options.protocol + 'www.facebook.com/sharer/share.php?';
+	  		//url += 'u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+	  		//url += '&title=' + document.getElementById("myArticle").text + byname; //encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
 			'linkedin' : function() {
-				var url = root.options.protocol + 'www.linkedin.com/shareArticle?mini=true';
-				url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text; // encodeURIComponent(root.options.url);
-				url += '&title=' + document.getElementById("myArticle").text + byname; // encodeURIComponent(root.options.title);
-				url += '&source=' + encodeURIComponent(root.options.source);
+				var url = 'linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text + '&title=' + document.getElementById("myArticle").text + byname + '&summary=' + '&source=' + encodeURIComponent(root.options.source);
+				//var url = root.options.protocol + 'www.linkedin.com/shareArticle?mini=true';
+				//url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text; // encodeURIComponent(root.options.url);
+				//url += '&title=' + document.getElementById("myArticle").text + byname; // encodeURIComponent(root.options.title);
+				//url += '&source=' + encodeURIComponent(root.options.source);
 
 				root.popup(url);
 			},
 	  	'googleplus' : function() {
-	  		var url = root.options.protocol + 'plus.google.com/share?';
-	  		url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				var url = 'plus.google.com/share?url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+				//var url = root.options.protocol + 'plus.google.com/share?';
+	  		//url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 
         root.popup(url);
 	  	},
