@@ -244,7 +244,7 @@
 .need-share-button_mailto { color: #efbe00; }
 .need-share-button_mailto:after { content: '\e007'; } /* '' */
 
-.need-share-button_copylink { color: #666a6d; }
+.need-share-button_copylink { color: #fff; }
 .need-share-button_copylink:after { content: '\e008'; } /* '' */
 
 
