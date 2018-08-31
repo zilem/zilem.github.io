@@ -133,7 +133,7 @@
 				root.popup(url);
 			},
 			'pinterest' : function() {
-				var url = 'https://pinterest.com/pin/create/link/?url=' + location.href.replace(location.hash,"") + document.getElementById("myAnchor").text  + '&amp;description=' + document.getElementById("myArticle").text + byname;
+				var url = 'https://pinterest.com/pin/create/bookmarklet/?url=' + location.href.replace(location.hash,"") + document.getElementById("myAnchor").text + '%2F'+ document.getElementById("myArticle").text + byname + '%2F' + '&amp;description=' + document.querySelector("meta[property='og:description']").getAttribute("content");
 				//var url = root.options.protocol + 'pinterest.com/pin/create/bookmarklet/?is_video=false';
 				//url += '&media=' + encodeURIComponent(root.options.image);
 				//url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
