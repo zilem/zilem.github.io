@@ -69,28 +69,28 @@
 	  // share urls for all networks
 	  root.share = {
 	  	'mailto' : function() {
-	  		var url = 'mailto:?subject=' + document.getElementById("myArticle").text + ' - Zi R. Lem' + '&body=Thought you might enjoy reading this: ' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text + ' - ' + encodeURIComponent(root.options.description);
+	  		var url = 'mailto:?subject=' + document.getElementById("myArticle").text + ' by Zi R. Lem' + '&body=Thought you might enjoy reading this: ' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text + ' - ' + encodeURIComponent(root.options.description);
 
 	  		window.location.href = url;
 	  	},
 	  	'twitter' : function() {
 	  		var url = root.options.protocol + 'twitter.com/home?status=';
-	  		url += encodeURIComponent(root.options.title) + encodeURIComponent(root.options.url);
+	  		url += document.getElementById("myArticle").text + ' by Zi R. Lem' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 
         root.popup(url);
 	  	},
 	  	'pinterest' : function() {
 	  		var url = root.options.protocol + 'pinterest.com/pin/create/bookmarklet/?is_video=false';
 	  		url += '&media=' + encodeURIComponent(root.options.image);
-	  		url += '&url=' + encodeURIComponent(root.options.url);
-	  		url += '&description=' + encodeURIComponent(root.options.title);
+	  		url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+	  		url += '&description=' + document.getElementById("myArticle").text + ' by Zi R. Lem'; //encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
 	  	'facebook' : function() {
 	  		var url = root.options.protocol + 'www.facebook.com/sharer/share.php?';
 	  		url += 'u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
-	  		url += '&title=' + document.getElementById("myArticle").text + ' - Zi R. Lem'; //encodeURIComponent(root.options.title);
+	  		url += '&title=' + document.getElementById("myArticle").text + ' by Zi R. Lem'; //encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
