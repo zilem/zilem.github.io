@@ -69,7 +69,7 @@
 	  // share urls for all networks
 	  root.share = {
 	  	'mailto' : function() {
-	  		var url = 'mailto:?subject=' + document.getElementById("myArticle").text + 'by Zi R. Lem' + '&body=Thought you might enjoy reading this: ' + encodeURIComponent(root.options.url) + + document.getElementById("myAnchor").text + ' - ' + encodeURIComponent(root.options.description);
+	  		var url = 'mailto:?subject=' + document.getElementById("myArticle").text + ' - Zi R. Lem' + '&body=Thought you might enjoy reading this: ' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text + ' - ' + encodeURIComponent(root.options.description);
 
 	  		window.location.href = url;
 	  	},
@@ -90,7 +90,7 @@
 	  	'facebook' : function() {
 	  		var url = root.options.protocol + 'www.facebook.com/sharer/share.php?';
 	  		url += 'u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
-	  		url += '&title=' + document.getElementById("myArticle").text + 'by Zi R. Lem'; //encodeURIComponent(root.options.title);
+	  		url += '&title=' + document.getElementById("myArticle").text + ' - Zi R. Lem'; //encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
