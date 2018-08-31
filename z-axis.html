@@ -102,11 +102,13 @@ body, html {
     </div>
   </div>
 
-
+  <a id="myAnchor" style="display:none;">#Respect</a>
   <div class="section respect" id="Respect">
+
     <div class="container" id="module">
       <div class="row">
-        <h1 class="section-heading">Respect.</h1>
+        <a id ="myArticle"><h1 class="section-heading"><font color="#fff">
+          Respect.</font></h1></a>
         <p><font color=#FF9E1A><b>A Framework for Evaluating Deep Collaborative Relationships.</b></font></p>
 
         <div class="para">
@@ -133,7 +135,9 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseRespect"
       aria-expanded="false" aria-controls="collapseRespect"></button>
-      &emsp;
+      &emsp; &emsp;
+      <!--<button onclick="myFunction()">Try it</button>
+      <p id="demo"></p>-->
       <div id="share-button-1" class="need-share-button-default" data-share-position="bottomCenter" data-share-networks="Mailto,Twitter,Pinterest,Facebook,GooglePlus,Linkedin"></div>
     </div>
   </div>
@@ -339,10 +343,18 @@ body, html {
 <script src="js/needsharebutton.js"></script>
 <script>
   new needShareDropdown(document.getElementById('share-button-1'));
+  //new needShareDropdown(document.getElementById('share-button-1'));
   new needShareDropdown(document.getElementById('share-button-2'));
   new needShareDropdown(document.getElementById('share-button-3'));
   new needShareDropdown(document.getElementById('share-button-4'));
   new needShareDropdown(document.getElementById('share-button-5'));
+</script>
+
+<script>
+function myFunction() {
+  var x = document.URL + document.getElementById("myAnchor").text;
+  document.getElementById("demo").innerHTML = x;
+}
 </script>
 
 
