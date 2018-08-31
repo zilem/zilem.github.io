@@ -75,7 +75,7 @@
 	  	},
 	  	'twitter' : function() {
 	  		var url = root.options.protocol + 'twitter.com/home?status=';
-	  		url += document.getElementById("myArticle").text + ' by Zi R. Lem' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+	  		url += document.getElementById("myArticle").text + ' by Zi R. Lem ' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 
         root.popup(url);
 	  	},
@@ -96,7 +96,7 @@
 	  	},
 	  	'googleplus' : function() {
 	  		var url = root.options.protocol + 'plus.google.com/share?';
-	  		url += 'url=' + encodeURIComponent(root.options.url);
+	  		url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
 
         root.popup(url);
 	  	},
@@ -132,8 +132,8 @@
 	  	},
 	  	'linkedin' : function() {
 	  		var url = root.options.protocol + 'www.linkedin.com/shareArticle?mini=true';
-	  		url += '&url=' + encodeURIComponent(root.options.url);
-	  		url += '&title=' + encodeURIComponent(root.options.title);
+	  		url += '&url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text; // encodeURIComponent(root.options.url);
+	  		url += '&title=' + document.getElementById("myArticle").text + ' by Zi R. Lem'; // encodeURIComponent(root.options.title);
 	  		url += '&source=' + encodeURIComponent(root.options.source);
 
         root.popup(url);
@@ -160,8 +160,8 @@
 	  	},
 	  	'tumblr' : function() {
 	  		var url = root.options.protocol + 'www.tumblr.com/share?v=3';
-	  		url += '&u=' + encodeURIComponent(root.options.url);
-	  		url += '&t=' + encodeURIComponent(root.options.title);
+	  		url += '&u=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+	  		url += '&t=' + document.getElementById("myArticle").text + ' by Zi R. Lem'; // encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
@@ -190,8 +190,8 @@
 	  	},
 	  	'evernote' : function() {
 	  		var url = root.options.protocol + 'www.evernote.com/clip.action?';
-	  		url += 'url=' + encodeURIComponent(root.options.url);
-	  		url += '&title=' + encodeURIComponent(root.options.title);
+	  		url += 'url=' + encodeURIComponent(root.options.url) + document.getElementById("myAnchor").text;
+	  		url += '&title=' + document.getElementById("myArticle").text + ' by Zi R. Lem'; // encodeURIComponent(root.options.title);
 
         root.popup(url);
 	  	},
