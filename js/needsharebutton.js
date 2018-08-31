@@ -140,17 +140,19 @@
         root.popup(url);
 	  	},
 			'copylink' : function() {
-				//var dummy = document.createElement('input'),
-					//text = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
+				var dummy = document.createElement('input'),
+					urltext = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
 
-				var dummy = document.createElement('input');
+				//var dummy = document.createElement('input');
 				document.body.appendChild(dummy);
 				dummy.setAttribute('value', location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text);
+				dummy.setAttribute('value', urltext);
 				//dummy.value = text;
 				dummy.select();
 				document.execCommand('copy');
 				document.body.removeChild(dummy);
-				alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
+				//alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
+				alert(urltext + ' URL copied!');
 			},
 
 
