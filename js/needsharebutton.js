@@ -180,11 +180,45 @@
 			},*/
 
 			function() {
-				var dummy = document.createElement('input'),
-					urltext = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
-				var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+				var dummy = document.createElement('input');
+				var	urltext = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
 
-				if (isiOSDevice) {
+
+				//var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+				/*var editable = input.contentEditable;
+				var readOnly = input.readOnly;
+
+				input.contentEditable = true;
+				input.readOnly = false;
+
+				var range = document.createRange();
+				range.selectNodeContents(input);*/
+
+				var selection = prompt("Copy link?", urltext);
+
+				//var dummy = document.getElementById("demo").value;
+				document.body.appendChild(dummy);
+				dummy.setAttribute('value', selection);
+				dummy.select();
+				/*selection.removeAllRanges();
+				selection.addRange(range);
+
+				input.setSelectionRange(0, 999999);
+				input.contentEditable = editable;
+				input.readOnly = readOnly;*/
+
+
+				/*if (person == null || person == "") {
+						txt = "User cancelled the prompt.";
+				} else {
+						txt = "Hello " + person + "! How are you today?";
+				}
+				document.getElementById("demo").innerHTML = txt;*/
+
+
+
+
+			/*	if (isiOSDevice) {
 
 					alert('iOS!');
 
@@ -203,13 +237,13 @@
 				document.body.appendChild(dummy);
 				dummy.setAttribute('value', urltext);
 				dummy.select();
-			}
+			}*/
 
 				//dummy.select();
 				document.execCommand('copy');
 				//document.body.removeChild(dummy);
 				//alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
-				alert(urltext + ' URL copied!');
+				alert('URL ' + urltext + ' copied!');
 			},
 
 
