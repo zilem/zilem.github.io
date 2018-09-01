@@ -185,27 +185,30 @@
 
 
 				//var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
-				/*var editable = input.contentEditable;
-				var readOnly = input.readOnly;
+				var editable = dummy.contentEditable;
+				var readOnly = dummy.readOnly;
 
-				input.contentEditable = true;
-				input.readOnly = false;
+				dummy.contentEditable = true;
+				dummy.readOnly = false;
 
 				var range = document.createRange();
-				range.selectNodeContents(input);*/
+				range.selectNodeContents(dummy);
 
 				var selection = prompt("Copy link?", urltext);
+				//selection.removeAllRanges();
+				//selection.addRange(range);
 
 				//var dummy = document.getElementById("demo").value;
+
+
+
+				//input.setSelectionRange(0, 999999);
+				dummy.contentEditable = editable;
+				dummy.readOnly = readOnly;
+
 				document.body.appendChild(dummy);
 				dummy.setAttribute('value', selection);
 				dummy.select();
-				/*selection.removeAllRanges();
-				selection.addRange(range);
-
-				input.setSelectionRange(0, 999999);
-				input.contentEditable = editable;
-				input.readOnly = readOnly;*/
 
 
 				/*if (person == null || person == "") {
@@ -243,7 +246,7 @@
 				document.execCommand('copy');
 				//document.body.removeChild(dummy);
 				//alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
-				alert('URL ' + urltext + ' copied!');
+				alert(dummy.value + ' copied!');
 			},
 
 
