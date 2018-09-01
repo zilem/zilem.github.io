@@ -139,16 +139,81 @@
 
         root.popup(url);
 	  	},
-			'copylink' : function() {
+			'copylink' :
+
+			/*function(elementId) {
+					var dummy = document.createElement('input');
+					var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
+
+					document.body.appendChild(dummy);
+					dummy.setAttribute('value', location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text);
+
+					if (isiOSDevice) {
+
+						var editable = input.contentEditable;
+						var readOnly = input.readOnly;
+
+						input.contentEditable = true;
+						input.readOnly = false;
+
+						var range = document.createRange();
+						range.selectNodeContents(input);
+
+						var selection = window.getSelection();
+						selection.removeAllRanges();
+						selection.addRange(range);
+
+						input.value = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
+						//input.setSelectionRange(0, 999999);
+						input.contentEditable = editable;
+						input.readOnly = readOnly;
+
+					} else {
+	 				input.select();
+				}
+
+				dummy.select();
+
+				document.execCommand('copy');
+				document.body.removeChild(dummy);
+				alert(' URL copied!');
+			},*/
+
+			function() {
 				var dummy = document.createElement('input'),
 					urltext = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
+				var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
 
-				//var dummy = document.createElement('input');
+
 				document.body.appendChild(dummy);
-				dummy.setAttribute('value', location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text);
+				//dummy.setAttribute('value', location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text);
 				dummy.setAttribute('value', urltext);
-				//dummy.value = text;
+
+				if (isiOSDevice) {
+
+					var editable = dummy.contentEditable;
+					var readOnly = dummy.readOnly;
+
+					dummy.contentEditable = true;
+					dummy.readOnly = false;
+
+					var range = document.createRange();
+					range.selectNodeContents(input);
+
+					var selection = window.getSelection();
+					selection.removeAllRanges();
+					selection.addRange(range);
+
+					dummy.setAttribute('value', urltext);
+					//input.setSelectionRange(0, 999999);
+					dummy.contentEditable = editable;
+					dummy.readOnly = readOnly;
+
+				} else {
 				dummy.select();
+			}
+
+				//dummy.select();
 				document.execCommand('copy');
 				document.body.removeChild(dummy);
 				//alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
