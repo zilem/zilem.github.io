@@ -184,12 +184,9 @@
 					urltext = location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text;
 				var isiOSDevice = navigator.userAgent.match(/ipad|iphone/i);
 
-
-				document.body.appendChild(dummy);
-				//dummy.setAttribute('value', location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text);
-				dummy.setAttribute('value', urltext);
-
 				if (isiOSDevice) {
+
+					alert('iOS!');
 
 					var editable = dummy.contentEditable;
 					var readOnly = dummy.readOnly;
@@ -197,25 +194,20 @@
 					dummy.contentEditable = true;
 					dummy.readOnly = false;
 
-					var range = document.createRange();
-					range.selectNodeContents(input);
-
-					var selection = window.getSelection();
-					selection.removeAllRanges();
-					selection.addRange(range);
-
 					dummy.setAttribute('value', urltext);
 					//input.setSelectionRange(0, 999999);
 					dummy.contentEditable = editable;
 					dummy.readOnly = readOnly;
 
 				} else {
+				document.body.appendChild(dummy);
+				dummy.setAttribute('value', urltext);
 				dummy.select();
 			}
 
 				//dummy.select();
 				document.execCommand('copy');
-				document.body.removeChild(dummy);
+				//document.body.removeChild(dummy);
 				//alert(location.href.replace(location.hash,"") + '#' + document.getElementById("myAnchor").text + ' URL copied!');
 				alert(urltext + ' URL copied!');
 			},
