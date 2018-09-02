@@ -5,7 +5,6 @@
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
   <title>Zi Lem - Meaningful cinema transforms lives</title>
   <meta name='description' content='I make moving & inspiring films about real-life stories.
   I create meaningful cinema that transforms lives.'>
@@ -404,7 +403,7 @@ function fShare(post,post_title) {
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + '&summary=' +document.querySelector('meta[property="og:description"]'));
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + '&summary=' + document.getElementsByTagName("meta")[4].content);
 }
 function gShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
@@ -412,7 +411,7 @@ function gShare(post,post_title) {
 }
 function eShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might enjoy reading this: ' + location.href.replace(location.hash,"") + "#" + post + " - " + document.querySelector('meta[property="og:description"]'));
+  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might enjoy reading this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
 }
 </script>
 
