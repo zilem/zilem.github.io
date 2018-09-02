@@ -21,11 +21,11 @@
   color:#fff;
 }
 
-.button2 {
+.buttonTop {
   height: 25px;
-  padding: 0px 15px;
+  padding: 10px 15px;
   background-color: transparent; /*#313131;*/
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
   color:#fff;
   letter-spacing: .1rem;
   font-family: 'SF-Pro-Text-SemiBold';
@@ -33,9 +33,22 @@
   text-decoration: none;
 }
 
-.button3 {
+.buttonNone {
   position: absolute;
   top: -18px;
+  height: 38px;
+  background-color: transparent; /*#313131;*/
+  border: none;
+  color:#fff;
+  letter-spacing: .1rem;
+  font-family: 'SF-Pro-Text-SemiBold';
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.buttonNone2 {
+  position: absolute;
+  top: 0px;
   height: 38px;
   background-color: transparent; /*#313131;*/
   border: none;

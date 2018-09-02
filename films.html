@@ -97,9 +97,9 @@ body, html {
   </div>
 
 
-  <div class="section omm" id="OfMeek&Menace">
+  <div class="section omm" id="OfMeekAndMenace">
     <div class="container">
-      <h1 class="section-heading">Of Meek & Menace</h1>
+      <h1 class="section-heading">Of Meek And Menace</h1>
       <p><font color=#FF9E1A><b>Is Martial Arts Self-Defence?</b></font></p>
       <div class="para">
         <p class="para-description">After surviving childhood abuse and racial
@@ -122,6 +122,17 @@ body, html {
         <p class="para-description">You’ll never see the ending coming.
           This is definitely not a film to miss.</p>-->
       </div>
+      <div class='buttonTop popup' onclick="shareFunction('OfMeekAndMenaceShare')">S H A R E
+        <span class="popuptext" id="OfMeekAndMenaceShare">
+          <span onclick="wShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('OfMeekAndMenace','Of Meek And Menace')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
@@ -137,15 +148,25 @@ body, html {
 
         <p class="para-description">I made this trailer as a volunteer to help
           build awareness of the launch.</p>
-        <br>
-        <style>.embed-container { position: relative; padding-bottom: 56.25%;
-        height: 0; overflow: hidden; max-width: 100%; }
-        .embed-container iframe, .embed-container object, .embed-container embed
-        { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-        </style>
-        <div class='embed-container'>
-          <iframe src='https://www.youtube.com/embed/KGjwgjrG29g' frameborder='0' allowfullscreen></iframe>
-        </div>
+      </div>
+      <div class='buttonTop popup' onclick="shareFunction('SpacemanShare')">S H A R E
+        <span class="popuptext" id="SpacemanShare">
+          <span onclick="wShare('Spaceman','Garage Spaceman')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Spaceman','Garage Spaceman')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Spaceman','Garage Spaceman')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Spaceman','Garage Spaceman')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Spaceman','Garage Spaceman')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Spaceman','Garage Spaceman')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Spaceman','Garage Spaceman')"><img src='images/email24.png'></span>
+        </span>
+      </div>
+      <style>.embed-container { position: relative; padding-bottom: 56.25%;
+      height: 0; overflow: hidden; max-width: 100%; }
+      .embed-container iframe, .embed-container object, .embed-container embed
+      { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+      </style>
+      <div class='embed-container'>
+        <iframe src='https://www.youtube.com/embed/KGjwgjrG29g' frameborder='0' allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -165,7 +186,6 @@ body, html {
 
         <p><font color=#FF9E1A><b>A geneticist struggles with his morality as he
         searches for the gene that triggers his previsions of impending deaths.</b></font></p>
-        <br>
         <!--<style>.embed-container { position: relative; padding-bottom: 56.25%;
           height: 0; overflow: hidden; max-width: 100%; }
           .embed-container iframe, .embed-container object, .embed-container embed
@@ -174,6 +194,17 @@ body, html {
         <div class='embed-container'>
           <iframe src='https://player.vimeo.com/video/154556626' frameborder='0' allowfullscreen></iframe>
         </div>-->
+      </div>
+      <div class='buttonTop popup' onclick="shareFunction('PrescientShare')">S H A R E
+        <span class="popuptext" id="PrescientShare">
+          <span onclick="wShare('Prescient','Prescient')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Prescient','Prescient')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Prescient','Prescient')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Prescient','Prescient')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Prescient','Prescient')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Prescient','Prescient')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Prescient','Prescient')"><img src='images/email24.png'></span>
+        </span>
       </div>
 
 
@@ -314,6 +345,40 @@ body, html {
   </div>
 </div>
 <script src="js/index.js"></script>
+<script src="js/share.js"></script>
+<script type="text/javascript">
+function shareFunction(shareID) {
+  document.getElementById(shareID).classList.toggle("show");
+}
+function wShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;
+}
+function tShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function mShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('fb-messenger://share?link=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function fShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function lShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[4].content);
+}
+function gShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://plus.google.com/share?url=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function eShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
+}
+</script>
 
 <div class="footer">
   <font color="#fff">Copyright © 2018 Zi R. Lem. All Rights Reserved.</font>

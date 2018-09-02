@@ -105,7 +105,7 @@ body, html {
       <a class='button' href='engage.html'>E N G A G E</a>
       </div>
       <div class="row">
-      <div class='button3 popup' onclick="shareFunction('homeShare')">S H A R E
+      <div class='buttonNone popup' onclick="shareFunction('homeShare')">S H A R E
         <span class="popuptext" id="homeShare">
           <span onclick="wHShare()"><img src='images/whatsapp24.png'></span>&nbsp;
           <span onclick="tHShare()"><img src='images/twitter24.png'></span>&nbsp;
@@ -158,8 +158,8 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseMeaning"
       aria-expanded="false" aria-controls="collapseMeaning"></button>
-      &emsp;&emsp;
-      <div class='button2 popup' onclick="shareFunction('MeaningShare')">S H A R E
+      <br>
+      <div class='buttonNone2 popup' onclick="shareFunction('MeaningShare')">S H A R E
         <span class="popuptext" id="MeaningShare">
           <span onclick="wShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/whatsapp24.png'></span>&nbsp;
           <span onclick="tShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/twitter24.png'></span>&nbsp;
@@ -203,7 +203,7 @@ function gHShare() {
   window.open ('https://plus.google.com/share?url=' + location.href.replace(location.hash,""));
 }
 function eHShare() {
-  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might enjoy this: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
+  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
 }
 
 // SHARING POST
@@ -233,7 +233,7 @@ function gShare(post,post_title) {
 }
 function eShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might enjoy reading this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
+  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
 }
 </script>
 
