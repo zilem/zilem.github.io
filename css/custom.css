@@ -360,8 +360,8 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
 }
 .language {
-  background-color: #8b8589;
-  color: #313131;
+  background-color: #4c516d; /*#8b8589;
+  /*color: #313131;*/
   /*background-image: url('../images/The_Thinker.jpg');*/
 }
 .pragmatism {
