@@ -37,7 +37,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+  <!--<script type="text/javascript" src="js/share.js"></script>-->
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -180,8 +180,6 @@ body, html {
   </div>
 
 
-  <a id="myAnchor" style="display:none;">TrueStories</a>
-  <a id ="myArticle" style="display:none;">Authentic. Cathartic.</a>
   <div class="section truestories" id="TrueStories">
     <div class="container" id="module">
       <div class="row" >
@@ -208,13 +206,21 @@ body, html {
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseTrueStories"
       aria-expanded="false" aria-controls="collapseTrueStories"></button>
       &emsp; &emsp;
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <div class='button2 popup' onclick="shareFunction('TrueStoriesShare')">S H A R E
+        <span class="popuptext" id="TrueStoriesShare">
+          <span onclick="wShare('TrueStories','Authentic. Cathartic.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('TrueStories','Authentic. Cathartic.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('TrueStories','Authentic. Cathartic.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('TrueStories','Authentic. Cathartic.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('TrueStories','Authentic. Cathartic.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('TrueStories','Authentic. Cathartic.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('TrueStories','Authentic. Cathartic.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Church</a>
-  <a id ="myArticle" style="display:none;">Church, Craft & Craving.</a>
   <div class="section church" id="Church">
     <div class="container" id="module">
       <h1 class="section-heading">Church, Craft & Craving.</h1>
@@ -237,13 +243,21 @@ body, html {
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseChurch"
       aria-expanded="false" aria-controls="collapseChurch"></button>
       &emsp; &emsp;
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <div class='button2 popup' onclick="shareFunction('ChurchShare')">S H A R E
+        <span class="popuptext" id="ChurchShare">
+          <span onclick="wShare('Church','Church, Craft and Craving.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Church','Church, Craft and Craving.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Church','Church, Craft and Craving.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Church','Church, Craft and Craving.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Church','Church, Craft and Craving.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Church','Church, Craft and Craving.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Church','Church, Craft and Craving.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Facts</a>
-  <a id ="myArticle" style="display:none;">Facts are meaningless.</a>
   <div class="section facts" id="Facts">
     <div class="container" id="module">
       <div class="row">
@@ -251,20 +265,35 @@ body, html {
           <h1 class="section-heading">Facts are meaningless.</h1>
 
           <p class="para-description"><font color=#FF9E1A><b>Human beings have
-          the innate ability to associate any meaning to mere facts. Involuntarily.
-          We convince ourselves of such meaning by believing the stories we
-          tell ourselves. Simply because...</b></font></p>
+          the innate flaw of associating subjective meaning to mere facts.
+          Involuntarily.</b></font></p>
+
+          <div class="para-description collapse" id="collapseFacts" aria-expanded="false">
+          <p>We convince ourselves of such meaning by believing the stories we tell
+          ourselves. Therefore, films transform an audience when the...</p>
 
           <h1 class="section-heading" style="margin-top:-10px;">Stories are meaningful.</h1>
+          </div>
         </div>
       </div>
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <button class="button1 collapsed" data-toggle="collapse" href="#collapseFacts"
+      aria-expanded="false" aria-controls="collapseFacts"></button>
+      &emsp; &emsp;
+      <div class='button2 popup' onclick="shareFunction('FactsShare')">S H A R E
+        <span class="popuptext" id="FactsShare">
+          <span onclick="wShare('Facts','Facts are meaningless.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Facts','Facts are meaningless.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Facts','Facts are meaningless.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Facts','Facts are meaningless.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Facts','Facts are meaningless.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Facts','Facts are meaningless.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Facts','Facts are meaningless.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Intersectionality</a>
-  <a id ="myArticle" style="display:none;">Intersectionality.</a>
   <div class="section intersectionality" id="Intersectionality">
     <div class="container" id="module">
       <div class="row">
@@ -296,13 +325,21 @@ body, html {
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseIntersectionality"
       aria-expanded="false" aria-controls="collapseIntersectionality"></button>
       &emsp; &emsp;
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <div class='button2 popup' onclick="shareFunction('IntersectionalityShare')">S H A R E
+        <span class="popuptext" id="IntersectionalityShare">
+          <span onclick="wShare('Intersectionality','Intersectionality.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Intersectionality','Intersectionality.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Intersectionality','Intersectionality.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Intersectionality','Intersectionality.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Intersectionality','Intersectionality.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Intersectionality','Intersectionality.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Intersectionality','Intersectionality.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Language</a>
-  <a id ="myArticle" style="display:none;">Language as a tool for Thought.</a>
   <div class="section language" id="Language">
     <div class="container" id="module">
       <div class="row">
@@ -324,13 +361,21 @@ body, html {
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseLanguage"
       aria-expanded="false" aria-controls="collapseLanguage"></button>
       &emsp; &emsp;
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <div class='button2 popup' onclick="shareFunction('LanguageShare')">S H A R E
+        <span class="popuptext" id="LanguageShare">
+          <span onclick="wShare('Language','Language as a tool for Thought.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Language','Language as a tool for Thought.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Language','Language as a tool for Thought.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Language','Language as a tool for Thought.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Language','Language as a tool for Thought.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Language','Language as a tool for Thought.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Language','Language as a tool for Thought.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Pragmatism</a>
-  <a id ="myArticle" style="display:none;">Pragmatism as Oppression.</a>
   <div class="section pragmatism" id="Pragmatism">
     <div class="container" id="module">
       <div class="row">
@@ -360,7 +405,17 @@ body, html {
       <button class="button1 collapsed" data-toggle="collapse" href="#collapsePragmatism"
       aria-expanded="false" aria-controls="collapsePragmatism"></button>
       &emsp; &emsp;
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+      <div class='button2 popup' onclick="shareFunction('PragmatismShare')">S H A R E
+        <span class="popuptext" id="PragmatismShare">
+          <span onclick="wShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Pragmatism','Pragmatism as Oppression.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
@@ -371,7 +426,7 @@ body, html {
 </div>
 
 <script src="js/index.js"></script>
-
+<script src="js/share.js"></script>
 <!--<script src="js/needsharebutton.js"></script>
 <script>
   new needShareDropdown(document.getElementById('share-button-1'));
@@ -381,7 +436,7 @@ body, html {
   new needShareDropdown(document.getElementById('share-button-4'));
   new needShareDropdown(document.getElementById('share-button-5'));
 </script>-->
-<script>
+<script type="text/javascript">
 function shareFunction(shareID) {
   document.getElementById(shareID).classList.toggle("show");
 }
@@ -391,8 +446,8 @@ function wShare(post,post_title) {
 }
 function tShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://twitter.com/share?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
-}
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+} //https://twitter.com/share?text=
 function mShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
   window.open ('fb-messenger://share?link=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
@@ -403,7 +458,7 @@ function fShare(post,post_title) {
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + '&summary=' + document.getElementsByTagName("meta")[4].content);
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[4].content);
 }
 function gShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
