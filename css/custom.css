@@ -1,6 +1,6 @@
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.button {
+.button, .button:hover, .button:focus {
   height: 38px;
   padding: 0 20px;
   /*background: #FF9E1A;
@@ -26,6 +26,19 @@
   padding: 0px 15px;
   background-color: transparent; /*#313131;*/
   border-bottom: 2px solid #fff;
+  color:#fff;
+  letter-spacing: .1rem;
+  font-family: 'SF-Pro-Text-SemiBold';
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.button3 {
+  position: absolute;
+  top: -18px;
+  height: 38px;
+  background-color: transparent; /*#313131;*/
+  border: none;
   color:#fff;
   letter-spacing: .1rem;
   font-family: 'SF-Pro-Text-SemiBold';
@@ -72,7 +85,7 @@
     z-index: 1;
     bottom: 125%;
     left: 50%;
-    margin-left: -125px;
+    margin-left: -120px;
 }
 
 /* Popup arrow */
