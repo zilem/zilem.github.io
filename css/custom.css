@@ -7,18 +7,30 @@
   border-radius: 10px;
   border: 0px;*/
   font-family: 'SF-Pro-Text-SemiBold';
-  font-size: 14px;
+  font-size: 12px;
   background-color: transparent; /*#313131;*/
   border-bottom: 2px solid #FF9E1A;
   color:#FF9E1A;
 }
 
-.button1 {
+.button1, .button1:hover, .button1:focus {
   height: 38px;
   padding: 0px 15px;
   background-color: transparent; /*#313131;*/
   border-bottom: 2px solid #fff;
   color:#fff;
+}
+
+.button2 {
+  height: 25px;
+  padding: 0px 15px;
+  background-color: transparent; /*#313131;*/
+  border-bottom: 2px solid #fff;
+  color:#fff;
+  letter-spacing: .1rem;
+  font-family: 'SF-Pro-Text-SemiBold';
+  font-size: 12px;
+  text-decoration: none;
 }
 
 #module button.collapsed:after  {
@@ -37,7 +49,63 @@
   color:#fff;
 }
 
-.engagebutton {
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #000008;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -125px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/*.engagebutton {
   font-family: 'SF-Pro-Text-Regular';
   border: 3px solid #FF9E1A;
   border-radius: 100px;
@@ -51,7 +119,7 @@
   font-size: 24px;
 }
 
-/*#menu {
+#menu {
   position: fixed;
   z-index: 1;
   left: 0;

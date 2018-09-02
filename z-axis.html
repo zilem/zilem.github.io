@@ -11,9 +11,9 @@
   I create meaningful cinema that transforms lives.'>
 
   <meta property='og:title' content='Zi R. Lem - Thinking along the z-Axis'/>
-  <meta property='og:url' content='https://zilem.studio'/>
+  <meta property='og:url' content='http://zilem.studio'/>
   <meta property='og:description' content='Transforming Lives via Meaningful Cinema.'>
-  <meta property='og:image' content='favicon300x300b.jpg'>
+  <meta property='og:image' content='favicon300x300w.jpg'>
   <meta property='og:type' content='video.movie'/>
 
   <!-- Mobile Specific Metas
@@ -31,7 +31,6 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/needsharebutton.css">
-  <!--<link rel="stylesheet" href="https://i.icomoon.io/public/temp/d3a8c9b913/UntitledProject/style.css">-->
 
 
   <!-- Scripts
@@ -39,7 +38,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 
   <!-- Favicon
@@ -59,15 +57,6 @@ body, html {
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<ul id=menu>
-    <li><a href='index.html'>I D E A S</a></li>
-    <li><a href='me.html'>M E</a></li>
-    <li><a href='now.html'>N O W</a></li>
-    <li><a href='past.html'>P A S T</a></li>
-    <li style='float:right' id='engagemenu'>
-      <a href='engage.html'><font color='#313131'><b>E N G A G E</b></font></a></li>
-  </ul>-->
-
 <div class="window">
   <div class="header">
 
@@ -99,12 +88,11 @@ body, html {
         beliefs that have shaped my path as an artist. If conformity is a plane,
         these are thoughts along the z-Axis.</p>
       </div>
+
     </div>
   </div>
 
 
-  <a id="myAnchor" style="display:none;">Respect</a>
-  <a id ="myArticle" style="display:none;">Respect.</a>
   <div class="section respect" id="Respect">
     <div class="container" id="module">
       <div class="row">
@@ -135,10 +123,20 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseRespect"
       aria-expanded="false" aria-controls="collapseRespect"></button>
-      &emsp; &emsp;
-      <!--<button onclick="myFunction()">Try it</button>
-      <p id="demo"></p>-->
-      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto,Copylink"></div>
+      &emsp;&emsp;
+      <div class='button2 popup' onclick="shareFunction('RespectShare')">S H A R E
+        <span class="popuptext" id="RespectShare">
+          <span onclick="wShare('Respect','Respect.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Respect','Respect.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Respect','Respect.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Respect','Respect.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Respect','Respect.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Respect','Respect.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Respect','Respect.')"><img src='images/email24.png'></span>
+        </span>
+      </div>
+      <!--<div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
+-->
     </div>
   </div>
 
@@ -167,10 +165,24 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseOneword"
       aria-expanded="false" aria-controls="collapseOneword"></button>
+      &emsp; &emsp;
+      <div class='button2 popup' onclick="shareFunction('OneWordShare')">S H A R E
+        <span class="popuptext" id="OneWordShare">
+          <span onclick="wShare('OneWord','What is the One Word you stand for?')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('OneWord','What is the One Word you stand for?')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('OneWord','What is the One Word you stand for?')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('OneWord','What is the One Word you stand for?')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('OneWord','What is the One Word you stand for?')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('OneWord','What is the One Word you stand for?')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('OneWord','What is the One Word you stand for?')"><img src='images/email24.png'></span>
+        </span>
+      </div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">TrueStories</a>
+  <a id ="myArticle" style="display:none;">Authentic. Cathartic.</a>
   <div class="section truestories" id="TrueStories">
     <div class="container" id="module">
       <div class="row" >
@@ -196,10 +208,14 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseTrueStories"
       aria-expanded="false" aria-controls="collapseTrueStories"></button>
+      &emsp; &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">Church</a>
+  <a id ="myArticle" style="display:none;">Church, Craft & Craving.</a>
   <div class="section church" id="Church">
     <div class="container" id="module">
       <h1 class="section-heading">Church, Craft & Craving.</h1>
@@ -221,10 +237,14 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseChurch"
       aria-expanded="false" aria-controls="collapseChurch"></button>
+      &emsp; &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">Facts</a>
+  <a id ="myArticle" style="display:none;">Facts are meaningless.</a>
   <div class="section facts" id="Facts">
     <div class="container" id="module">
       <div class="row">
@@ -239,10 +259,13 @@ body, html {
           <h1 class="section-heading" style="margin-top:-10px;">Stories are meaningful.</h1>
         </div>
       </div>
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">Intersectionality</a>
+  <a id ="myArticle" style="display:none;">Intersectionality.</a>
   <div class="section intersectionality" id="Intersectionality">
     <div class="container" id="module">
       <div class="row">
@@ -273,10 +296,14 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseIntersectionality"
       aria-expanded="false" aria-controls="collapseIntersectionality"></button>
+      &emsp; &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">Language</a>
+  <a id ="myArticle" style="display:none;">Language as a tool for Thought.</a>
   <div class="section language" id="Language">
     <div class="container" id="module">
       <div class="row">
@@ -288,8 +315,8 @@ body, html {
           <p class="para-description collapse" id="collapseLanguage" aria-expanded="false">
           <font color=#FF9E1A><b>Language has a dual function. In Singapore,
           language is primarily viewed as a means of communication with others
-          and not so much with the self. Critical thinking begins with asking
-          oneself <i>"Why?"</i></b></font></p>
+          and not so much with the self. Critical thinking & reflection begins
+          with asking oneself <i>"Why?"</i></b></font></p>
 
           <h1 class="section-heading" style="margin-top:-10px;">
             <font color="#fff">Language as a tool for Thought.</font></h1>
@@ -297,10 +324,14 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapseLanguage"
       aria-expanded="false" aria-controls="collapseLanguage"></button>
+      &emsp; &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
 
+  <a id="myAnchor" style="display:none;">Pragmatism</a>
+  <a id ="myArticle" style="display:none;">Pragmatism as Oppression.</a>
   <div class="section pragmatism" id="Pragmatism">
     <div class="container" id="module">
       <div class="row">
@@ -329,6 +360,8 @@ body, html {
       </div>
       <button class="button1 collapsed" data-toggle="collapse" href="#collapsePragmatism"
       aria-expanded="false" aria-controls="collapsePragmatism"></button>
+      &emsp; &emsp;
+      <div id="share-button-1" class="need-share-button-default" data-share-position="topCenter" data-share-networks="Whatsapp,Twitter,Messenger,Facebook,Linkedin,GooglePlus,Mailto"></div>
     </div>
   </div>
 
@@ -340,7 +373,7 @@ body, html {
 
 <script src="js/index.js"></script>
 
-<script src="js/needsharebutton.js"></script>
+<!--<script src="js/needsharebutton.js"></script>
 <script>
   new needShareDropdown(document.getElementById('share-button-1'));
   //new needShareDropdown(document.getElementById('share-button-1'));
@@ -348,15 +381,40 @@ body, html {
   new needShareDropdown(document.getElementById('share-button-3'));
   new needShareDropdown(document.getElementById('share-button-4'));
   new needShareDropdown(document.getElementById('share-button-5'));
-</script>
-
+</script>-->
 <script>
-function myFunction() {
-  var x = document.URL + document.getElementById("myAnchor").text;
-  document.getElementById("demo").innerHTML = x;
+function shareFunction(shareID) {
+  document.getElementById(shareID).classList.toggle("show");
+}
+function wShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;
+}
+function tShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://twitter.com/share?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function mShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('fb-messenger://share?link=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function fShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function lShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + '&summary=' +document.querySelector('meta[property="og:description"]'));
+}
+function gShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('https://plus.google.com/share?url=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+}
+function eShare(post,post_title) {
+  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
+  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might enjoy reading this: ' + location.href.replace(location.hash,"") + "#" + post + " - " + document.querySelector('meta[property="og:description"]'));
 }
 </script>
-
 
 
 <!-- End Document
