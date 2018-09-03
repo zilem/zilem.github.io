@@ -37,6 +37,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -96,13 +99,13 @@ body, html {
         <div class="nine columns">
           <h1 class="section-heading">Bio</h1>
           <p><font color=#FF9E1A><b>Multidisciplinarian. Nomad. Activist.</b></font></p>
-          <p>Originally from Singapore, Lem studied Art & Architecture in the
+          <p>Originally from Singapore, Lem has written & directed for 10 years
+            in UK, China and US where he shot his award-winning feature
+            <i>Prescient</i> in Niagara Falls. He studied Art & Architecture in the
             renowned Cooper Union in New York before pursuing Writing & Directing
-            in London and Producing at UCLA. He has filmed in UK, China and US
-            where he shot his award-winning feature <i>Prescient</i> in Niagara
-            Falls. He previously worked in strategy consulting & investment banking
-            at Morgan Stanley, KPMG and a fashion startup. He has lived in 10
-            countries across 4 continents.</p>
+            in London and Producing at UCLA. He previously worked in strategy
+            consulting & investment banking at Morgan Stanley, KPMG and a fashion
+            startup. He has lived in 10 countries across 4 continents.</p>
 
           <div class='buttonTop popup' onclick="shareFunction('BioShare')">S H A R E
             <span class="popuptext" id="BioShare">
@@ -270,7 +273,7 @@ body, html {
         inspire us in our pursuit of Meaning in the face of pragmatism.</b></font></p>
       <h1 class="section-heading">Man's Pursuit of Meaning.</h1>
       <br>
-      <div class='buttonTop popup' onclick="shareFunction('MyJourneyShare2')">S H A R E
+      <div class='buttonTop popup' onclick="shareFunction('MyJourneyShare2')" id="ShareBtn">S H A R E
         <span class="popuptext" id="MyJourneyShare2">
           <span onclick="wShare('MyJourney','My Journey.')"><img src='images/whatsapp24.png'></span>&nbsp;
           <span onclick="tShare('MyJourney','My Journey.')"><img src='images/twitter24.png'></span>&nbsp;
@@ -289,8 +292,26 @@ body, html {
 <script src="js/share.js"></script>
 <script type="text/javascript">
 function shareFunction(shareID) {
-  document.getElementById(shareID).classList.toggle("show");
+  var box = document.getElementById(shareID);
+  box.classList.toggle("show");
+
+  /*var btn = document.getElementById('ShareBtn');
+  window.addEventListener('mouseup',function(event){
+    if(event.target != btn){
+      box.classList.toggle("hide");
+
+    }
+  });*/
 }
+/*function closeShare(shareID) {
+var box = document.getElementById(shareID);
+window.addEventListener('mouseup',function(event){
+  if(event.target != box){
+    box.classList.toggle("hide");
+
+  }
+});
+}*/
 function wShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
   window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;
