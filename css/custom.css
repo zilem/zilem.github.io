@@ -268,7 +268,7 @@ tbody.collapse.in{display:table-row-group}
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .rms, .meaning, .cinema,
-.myrealstory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
+.mylifestory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .prescient, .engage,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
@@ -298,7 +298,7 @@ tbody.collapse.in{display:table-row-group}
   padding-bottom: 5rem;
   z-index: 1;
 }
-.myrealstory {
+.mylifestory {
   background-image: url('../images/Hero.01_10_46_23.Still003.jpg');
 }
 .meaningless {
