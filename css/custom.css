@@ -267,8 +267,8 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .intro, .meaning, .cinema,
-.multidiscipline, .meaningless, .inspiration, .empathy, .calling, .meaning2,
+.landing, .rms, .meaning, .cinema,
+.myrealstory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .prescient, .engage,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
@@ -281,7 +281,7 @@ tbody.collapse.in{display:table-row-group}
 .landing {
   background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
 }
-.intro {
+.rms {
   background-color: #FCF9EF;
   color: #313131;
 }
@@ -291,14 +291,14 @@ tbody.collapse.in{display:table-row-group}
 .cinema {
   background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
 }
-.bio {
+.intro {
   /*background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');*/
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
   z-index: 1;
 }
-.multidiscipline {
+.myrealstory {
   background-image: url('../images/Hero.01_10_46_23.Still003.jpg');
 }
 .meaningless {
