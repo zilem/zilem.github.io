@@ -120,6 +120,12 @@
     animation: fadeIn 1s;
 }
 
+.popup .hide {
+    visibility: hidden;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
@@ -233,7 +239,7 @@ tbody.collapse.in{display:table-row-group}
   -webkit-transition-property:height,visibility;
   -o-transition-property:height,visibility;transition-property:height,visibility}
 
-.show, .hide {
+/*.show, .hide {
   position: absolute;
   bottom: -1em;
   z-index: 100;
