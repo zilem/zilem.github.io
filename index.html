@@ -6,14 +6,13 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <title>Zi Lem - Meaningful cinema transforms lives</title>
-  <meta name='description' content='I make moving and inspiring films about real-life stories.
-  I create meaningful cinema that transforms lives.'>
-
   <meta property='og:title' content='Zi R. Lem, Screenwriter-Filmmaker'/>
   <meta property='og:url' content='http://zilem.studio'/>
-  <meta property='og:description' content='Transforming Lives via Meaningful Cinema.'>
   <meta property='og:image' content='images/favicon_portrait3.png'>
   <meta property='og:type' content='video.movie'/>
+  <meta property='og:description' content='Most movies are entertaining, but meaningless and forgettable. I make Moving and Inspiring films about stories in the Real world. Meaningful Cinema Transforms Lives.'>
+
+  <meta name='description' content='Most movies are entertaining, but meaningless and forgettable. I make Moving and Inspiring films about stories in the Real world. Meaningful Cinema Transforms Lives.'>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -196,13 +195,13 @@ function fHShare() {
   window.open ('https://facebook.com/sharer/sharer.php?u=' + location.href.replace(location.hash,""));
 }
 function lHShare() {
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[1].content);
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
 }
 function gHShare() {
   window.open ('https://plus.google.com/share?url=' + location.href.replace(location.hash,""));
 }
 function eHShare() {
-  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
+  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
 }
 
 // SHARING POST
@@ -224,7 +223,7 @@ function fShare(post,post_title) {
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[4].content);
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
 }
 function gShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
@@ -232,7 +231,7 @@ function gShare(post,post_title) {
 }
 function eShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[4].content);
+  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
 }
 </script>
 
