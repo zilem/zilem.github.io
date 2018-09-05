@@ -6,14 +6,14 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <title>Zi Lem - Meaningful cinema transforms lives</title>
-  <meta name='description' content='I make moving and inspiring films about real-life stories.
-  I create meaningful cinema that transforms lives.'>
-
   <meta property='og:title' content='Zi R. Lem - Thinking along the z-Axis'/>
   <meta property='og:url' content='http://zilem.studio'/>
-  <meta property='og:description' content='Transforming Lives via Meaningful Cinema.'>
   <meta property='og:image' content='favicon300x300w.jpg'>
   <meta property='og:type' content='video.movie'/>
+  <meta property='og:description' content='Most experiences in life lead us to think that the solution to a problem is often binary. Either this or that. As if the world exists on a plane. What if we could elevate ourselves above the plane? Here is a collection of revelations, values and beliefs that have shaped my path as an artist.'>
+
+  <meta name='description' content='Most experiences in life lead us to think that the solution to a problem is often binary. Either this or that. As if the world exists on a plane. What if we could elevate ourselves above the plane? Here is a collection of revelations, values and beliefs that have shaped my path as an artist.'>
+
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -83,7 +83,7 @@ body, html {
       <h1 class="section-heading">Thinking along the z-Axis.</h1>
       <p><font color=#FF9E1A><b>Out-of-the-plane thinking.</b></font></p>
       <div class="para">
-        <p class="para-description">Most experiences in life lead us to believe
+        <p class="para-description">Most experiences in life lead us to think
           that the solution to a problem is often binary. Either this or that. As
           if the world exists on a plane.
 
@@ -97,13 +97,13 @@ body, html {
       <br>
       <div class='buttonNone2 popup' onclick="shareFunction('zAxisShare')">S H A R E
         <span class="popuptext" id="zAxisShare">
-          <span onclick="wShare('zAxis','Thinking along the z-Axis.')"><img src='images/whatsapp24.png'></span>&nbsp;
-          <span onclick="tShare('zAxis','Thinking along the z-Axis.')"><img src='images/twitter24.png'></span>&nbsp;
-          <span onclick="mShare('zAxis','Thinking along the z-Axis.')"><img src='images/messenger24.png'></span>&nbsp;
-          <span onclick="fShare('zAxis','Thinking along the z-Axis.')"><img src='images/facebook24.png'></span>&nbsp;
-          <span onclick="lShare('zAxis','Thinking along the z-Axis.')"><img src='images/linkedin24.png'></span>&nbsp;
-          <span onclick="gShare('zAxis','Thinking along the z-Axis.')"><img src='images/googleplus24.png'></span>&nbsp;
-          <span onclick="eShare('zAxis','Thinking along the z-Axis.')"><img src='images/email24.png'></span>
+          <span onclick="wHShare('Out-of-the-plane thinking.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tHShare('Out-of-the-plane thinking.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mHShare('Out-of-the-plane thinking.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fHShare('Out-of-the-plane thinking.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lHShare('Out-of-the-plane thinking.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gHShare('Out-of-the-plane thinking.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eHShare('Out-of-the-plane thinking.')"><img src='images/email24.png'></span>
         </span>
       </div>
     </div>
@@ -452,6 +452,29 @@ body, html {
 function shareFunction(shareID) {
   document.getElementById(shareID).classList.toggle("show");
 }
+function wHShare(post_title) {
+  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"");
+}
+function tShare(post_title) {
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function mHShare(post_title) {
+  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function fHShare(post_title) {
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function lHShare(post_title) {
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+}
+function gHShare(post_title) {
+  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function eHShare(post_title) {
+  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + post_title + '%0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
+}
+
+// SHARING POST
 function wShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
   window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;

@@ -106,13 +106,13 @@ body, html {
       <div class="row">
       <div class='buttonNone popup' onclick="shareFunction('homeShare')">S H A R E
         <span class="popuptext" id="homeShare">
-          <span onclick="wHShare('Transforming Lives via Meaningful Cinema')"><img src='images/whatsapp24.png'></span>&nbsp;
-          <span onclick="tHShare('Transforming Lives via Meaningful Cinema')"><img src='images/twitter24.png'></span>&nbsp;
-          <span onclick="mHShare('Transforming Lives via Meaningful Cinema')"><img src='images/messenger24.png'></span>&nbsp;
-          <span onclick="fHShare('Transforming Lives via Meaningful Cinema')"><img src='images/facebook24.png'></span>&nbsp;
-          <span onclick="lHShare('Transforming Lives via Meaningful Cinema')"><img src='images/linkedin24.png'></span>&nbsp;
-          <span onclick="gHShare('Transforming Lives via Meaningful Cinema')"><img src='images/googleplus24.png'></span>&nbsp;
-          <span onclick="eHShare('Transforming Lives via Meaningful Cinema')"><img src='images/email24.png'></span>
+          <span onclick="wHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eHShare('Transforming Lives via Meaningful Cinema.')"><img src='images/email24.png'></span>
         </span>
       </div>
     </div>
@@ -140,7 +140,7 @@ body, html {
   <div class="section meaning" id="Meaning">
     <div class="container" id="module">
       <div class="row">
-          <h1 class="section-heading">Why am I obsessed about Meaning?</h1>
+          <h1 class="section-heading">Why I am obsessed about Meaning.</h1>
 
           <p class="para-description collapse" id="collapseMeaning" aria-expanded="false">
           In his book <i>Man’s Search for Meaning</i>, psychologist Viktor E.
@@ -159,13 +159,13 @@ body, html {
       <br>
       <div class='buttonNone2 popup' onclick="shareFunction('MeaningShare')">S H A R E
         <span class="popuptext" id="MeaningShare">
-          <span onclick="wShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/whatsapp24.png'></span>&nbsp;
-          <span onclick="tShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/twitter24.png'></span>&nbsp;
-          <span onclick="mShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/messenger24.png'></span>&nbsp;
-          <span onclick="fShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/facebook24.png'></span>&nbsp;
-          <span onclick="lShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/linkedin24.png'></span>&nbsp;
-          <span onclick="gShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/googleplus24.png'></span>&nbsp;
-          <span onclick="eShare('Meaning','Why am I obsessed about Meaning?')"><img src='images/email24.png'></span>
+          <span onclick="wShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eShare('Meaning','Why I am obsessed about Meaning.')"><img src='images/email24.png'></span>
         </span>
       </div>
     </div>
@@ -207,31 +207,31 @@ function eHShare(post_title) {
 // SHARING POST
 function wShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;
+  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post;
 }
 function tShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://twitter.com/intent/tweet?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
 }
 function mShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('fb-messenger://share?link=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
 }
 function fShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + byname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
 }
 function gShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://plus.google.com/share?url=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post);
+  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
 }
 function eShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('mailto:?subject=' + post_title + byname + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
+  window.open ('mailto:?subject=' + post_title + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
 }
 </script>
 
