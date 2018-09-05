@@ -106,13 +106,13 @@ body, html {
       <div class="row">
       <div class='buttonNone popup' onclick="shareFunction('homeShare')">S H A R E
         <span class="popuptext" id="homeShare">
-          <span onclick="wHShare()"><img src='images/whatsapp24.png'></span>&nbsp;
-          <span onclick="tHShare()"><img src='images/twitter24.png'></span>&nbsp;
-          <span onclick="mHShare()"><img src='images/messenger24.png'></span>&nbsp;
-          <span onclick="fHShare()"><img src='images/facebook24.png'></span>&nbsp;
-          <span onclick="lHShare()"><img src='images/linkedin24.png'></span>&nbsp;
-          <span onclick="gHShare()"><img src='images/googleplus24.png'></span>&nbsp;
-          <span onclick="eHShare()"><img src='images/email24.png'></span>
+          <span onclick="wHShare('Transforming Lives via Meaningful Cinema')"><img src='images/whatsapp24.png'></span>&nbsp;
+          <span onclick="tHShare('Transforming Lives via Meaningful Cinema')"><img src='images/twitter24.png'></span>&nbsp;
+          <span onclick="mHShare('Transforming Lives via Meaningful Cinema')"><img src='images/messenger24.png'></span>&nbsp;
+          <span onclick="fHShare('Transforming Lives via Meaningful Cinema')"><img src='images/facebook24.png'></span>&nbsp;
+          <span onclick="lHShare('Transforming Lives via Meaningful Cinema')"><img src='images/linkedin24.png'></span>&nbsp;
+          <span onclick="gHShare('Transforming Lives via Meaningful Cinema')"><img src='images/googleplus24.png'></span>&nbsp;
+          <span onclick="eHShare('Transforming Lives via Meaningful Cinema')"><img src='images/email24.png'></span>
         </span>
       </div>
     </div>
@@ -182,26 +182,26 @@ body, html {
 function shareFunction(shareID) {
   document.getElementById(shareID).classList.toggle("show");
 }
-function wHShare() {
-  window.location = 'whatsapp://send?text=' + location.href.replace(location.hash,"");
+function wHShare(post_title) {
+  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"");
 }
-function tShare() {
-  window.open ('https://twitter.com/intent/tweet?text=' + location.href.replace(location.hash,""));
+function tShare(post_title) {
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,""));
 }
-function mHShare() {
-  window.open ('fb-messenger://share?link=' + location.href.replace(location.hash,""));
+function mHShare(post_title) {
+  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
 }
-function fHShare() {
-  window.open ('https://facebook.com/sharer/sharer.php?u=' + location.href.replace(location.hash,""));
+function fHShare(post_title) {
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,""));
 }
-function lHShare() {
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+function lHShare(post_title) {
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
 }
-function gHShare() {
-  window.open ('https://plus.google.com/share?url=' + location.href.replace(location.hash,""));
+function gHShare(post_title) {
+  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,""));
 }
-function eHShare() {
-  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
+function eHShare(post_title) {
+  window.open ('mailto:?subject=' + 'Meaningful Cinema by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + post_title + '%0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
 }
 
 // SHARING POST
