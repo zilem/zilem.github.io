@@ -122,6 +122,8 @@
       src: url('../fonts/SF/SF-Pro-Display-Thin.otf') format('opentype');}
 @font-face {font-family: "SF-Pro-Display-Ultralight";
             src: url('../fonts/SF/SF-Pro-Display-Ultralight.otf') format('opentype');}
+@font-face {font-family: "SF-Pro-Display-Light";
+            src: url('../fonts/SF/SF-Pro-Display-Light.otf') format('opentype');}
 
 @font-face {font-family: "SF-Pro-Text-Light";
       src: url('../fonts/SF/SF-Pro-Text-Light.otf') format('opentype');}
@@ -133,6 +135,34 @@
       src: url('../fonts/SF/SF-Pro-Text-Semibold.otf') format('opentype');}
 @font-face {font-family: "SF-Pro-Text-Bold";
       src: url('../fonts/SF/SF-Pro-Text-Bold.otf') format('opentype');}
+
+@font-face {font-family: "SF-Compact-Display-Thin";
+      src: url('../fonts/SF/SF-Compact-Display-Thin.otf') format('opentype');}
+@font-face {font-family: "SF-Compact-Display-Ultralight";
+      src: url('../fonts/SF/SF-Compact-Display-Ultralight.otf') format('opentype');}
+@font-face {font-family: "SF-Compact-Display-Light";
+      src: url('../fonts/SF/SF-Compact-Display-Light.otf') format('opentype');}
+
+@font-face {font-family: "SF-Compact-Text-Light";
+      src: url('../fonts/SF/SF-Compact-Text-Light.otf') format('opentype');}
+
+@font-face {font-family: "Campton-Thin";
+      src: url('../fonts/Campton/Campton-Thin.otf') format('opentype');}
+@font-face {font-family: "Campton-ExtraLight";
+      src: url('../fonts/Campton/Campton-ExtraLight.otf') format('opentype');}
+@font-face {font-family: "Campton-Light";
+      src: url('../fonts/Campton/Campton-Light.otf') format('opentype');}
+@font-face {font-family: "Campton-Book";
+      src: url('../fonts/Campton/Campton-Book.otf') format('opentype');}
+@font-face {font-family: "Campton-Medium";
+      src: url('../fonts/Campton/Campton-Medium.otf') format('opentype');}
+@font-face {font-family: "Campton-SemiBold";
+      src: url('../fonts/Campton/Campton-SemiBold.otf') format('opentype');}
+@font-face {font-family: "Campton-Bold";
+      src: url('../fonts/Campton/Campton-Bold.otf') format('opentype');}
+@font-face {font-family: "Campton-ExtraBold";
+      src: url('../fonts/Campton/Campton-ExtraBold.otf') format('opentype');}
+
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -157,12 +187,12 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2 {
-  font-family: 'SF-Pro-Text-Semibold';
+  font-family: 'Campton-Thin';
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
 h3, h4, h5, h6 {
-  font-family: 'SF-Pro-Text-Regular';
+  font-family: 'Campton-ExtraLight';
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -184,7 +214,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  font-family: 'SF-Pro-Text-Light';
+  font-family: 'SF-Compact-Display-UltraLight';
   font-size: 1.9rem;
   line-height: 1.5;
   margin-top: 0; }
@@ -222,8 +252,8 @@ input[type="button"] {
   border: 0px;
   font-family: 'SF-Pro-Text-SemiBold';
   font-size: 12px;
-  border-bottom: 2px solid #FF9E1A;
-  color:#FF9E1A;
+  border-bottom: 2px solid #FFF;
+  color:#FFF;
   /*border: 1px solid #bbb;*/
   cursor: pointer;
   box-sizing: border-box; }
@@ -310,10 +340,10 @@ select:focus {
   outline: 0; }
 label,
 legend {
-  color: gray;
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
+  color: #fff;
+/*font-weight: 600;*/ }
 fieldset {
   padding: 0;
   border-width: 0; }

@@ -6,11 +6,12 @@
   /*background: #FF9E1A;
   border-radius: 10px;
   border: 0px;*/
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   background-color: transparent; /*#313131;*/
-  border-bottom: 2px solid #FF9E1A;
-  color:#FF9E1A;
+  border-bottom: 2px solid #323334;
+  text-decoration: none;
+  color:#323334;
 }
 
 .button1, .button1:hover, .button1:focus {
@@ -28,7 +29,7 @@
   border-top: 2px solid #fff;
   color:#fff;
   letter-spacing: .1rem;
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   text-decoration: none;
 }
@@ -41,7 +42,7 @@
   border: none;
   color:#fff;
   letter-spacing: .1rem;
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   text-decoration: none;
 }
@@ -54,14 +55,14 @@
   border: none;
   color:#fff;
   letter-spacing: .1rem;
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   text-decoration: none;
 }
 
 #module button.collapsed:after  {
   content: 'M O R E';
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   /*text-decoration: none;*/
   color:#fff;
@@ -69,7 +70,7 @@
 
 #module button:not(.collapsed):after {
   content: 'L E S S';
-  font-family: 'SF-Pro-Text-SemiBold';
+  font-family: 'Campton-Medium';
   font-size: 12px;
   text-decoration: none;
   color:#fff;
@@ -176,7 +177,7 @@ form {
   outline: none;
   border-bottom: 1px solid gray;
   color: #fff;
-  font-family: 'SF-Pro-Text-Regular';
+  font-family: 'Campton-Light';
   font-size: 14px;
   margin-bottom: 10px;
   /*box-sizing: border-box;*/
@@ -285,14 +286,14 @@ tbody.collapse.in{display:table-row-group}
   z-index: 1;
 }
 .landing {
-  background-image: url('../images/Sea_Man_Person_Ocean_1280x720.jpg');
+  background-image: url('../images/Flight_Mountains_Sky_Flying_1280x854-01.jpg');
 }
 .rms {
-  background-color: #FCF9EF;
+  background-color: #fffff0;
   color: #313131;
 }
 .meaning {
-  background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854.jpg');
+  background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854-01.jpg');
 }
 .cinema {
   background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
@@ -305,45 +306,45 @@ tbody.collapse.in{display:table-row-group}
   z-index: 1;
 }
 .mylifestory {
-  background-image: url('../images/Hero.01_10_46_23.Still003.jpg');
+  background-image: url('../images/Hero.01_10_46_23.Still003-01.jpg');
 }
 .meaningless {
-  background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670.jpg');
+  background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670-01.jpg');
 }
 .inspiration {
-  background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854.jpg');
+  background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854-01.jpg');
 }
 .empathy {
-  background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720.jpg');
+  background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720-01.jpg');
 }
 .calling {
-  background-image: url('../images/White_Gray_Teal_Air_Bus Under_1280x720.jpg');
+  background-image: url('../images/White_Gray_Teal_Air_Bus Under_1280x720-01.jpg');
 }
 .meaning2 {
-  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853.jpg');
+  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');
 }
 .projects {
   background-image: url('../images/Festival_Music_Rock_Sound_1280x854.jpg');
 }
 .omm {
-  background-image: url('../images/God_Bless_You.png');
+  background-image: url('../images/God_Bless_You-01.jpg');
 }
 .spaceman {
-  background-image: url('../images/Spacesuit.jpg');
+  background-image: url('../images/Spacesuit-01.jpg');
 }
 .gospace {
   background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854.jpg');
 }
 .prescient {
-  background-image: url('../images/PRESCIENT_R02_01.jpg');
+  background-image: url('../images/PRESCIENT_R02_01-01.jpg');
   background-repeat: no-repeat;
   background-size: auto;
 }
 .engage {
-  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854.jpg');
+  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01.jpg');
 }
 .zaxis {
-  background-image: url('../images/BraneWorld.jpg');
+  background-image: url('../images/BraneWorld-01.jpg');
 }
 .respect {
   background-color: #4c516d;
@@ -351,19 +352,19 @@ tbody.collapse.in{display:table-row-group}
   /*background-image: url('../images/The_Thinker.jpg');*/
 }
 .oneword {
-  background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
+  background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854-01.jpg');
 }
 .truestories {
-  background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720.jpg');
+  background-image: url('../images/Burn_Fog_Forest_Forest_Fire_1280x720-01.jpg');
 }
 .church {
-  background-image: url('../images/Brown_Jesus_Artwork_1280x854.jpg');
+  background-image: url('../images/Brown_Jesus_Artwork_1280x854-01.jpg');
 }
 .facts {
-  background-image: url('../images/Sea_Ocean_Hotel_Swimming_Pool_1280x854.jpg');
+  background-image: url('../images/Sea_Ocean_Hotel_Swimming_Pool_1280x854-01.jpg');
 }
 .intersectionality {
-  background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960.jpg');
+  background-image: url('../images/Clouds_Cloudscape_Dark_Eerie_1280x960-01.jpg');
 }
 .language {
   background-color: #4c516d; /*#8b8589;
@@ -371,7 +372,7 @@ tbody.collapse.in{display:table-row-group}
   /*background-image: url('../images/The_Thinker.jpg');*/
 }
 .pragmatism {
-  background-image: url('../images/I-borghesi-di-Calais-1884-ca.-1889.jpg');
+  background-image: url('../images/I-borghesi-di-Calais-1884-ca-1889-01.jpg');
 }
 
 
