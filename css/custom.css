@@ -274,9 +274,9 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .rms, .meaning, .cinema,
+.landing, .rms, .meaning,
 .mylifestory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.projects, .omm, .spaceman, .gospace, .prescient, .engage,
+.projects, .omm, .spaceman, .gospace, .cinema, .prescient, .engage,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
@@ -294,9 +294,6 @@ tbody.collapse.in{display:table-row-group}
 }
 .meaning {
   background-image: url('../images/Aerial_Clouds_Cloudy_Satellite_1280x854-01.jpg');
-}
-.cinema {
-  background-image: url('../images/Aquarium_Blue_Color_Deep_1280x854.jpg');
 }
 .intro {
   /*background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');*/
@@ -334,6 +331,9 @@ tbody.collapse.in{display:table-row-group}
 }
 .gospace {
   background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854.jpg');
+}
+.cinema {
+  background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854-01.jpg');
 }
 .prescient {
   background-image: url('../images/PRESCIENT_R02_01-01.jpg');
