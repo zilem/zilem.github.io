@@ -278,7 +278,7 @@ tbody.collapse.in{display:table-row-group}
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card, .landing, .rms, .meaning, .contact,
-.mylifestory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
+.mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .cinema, .prescient,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
@@ -318,7 +318,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01.jpg');
 }
 
-.mylifestory {
+.mystory {
   background-image: url('../images/Hero.01_10_46_23.Still003-01.jpg');
 }
 .meaningless {
