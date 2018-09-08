@@ -14,66 +14,67 @@
   color:#323334;
 }
 
-.button1, .button1:hover, .button1:focus {
+.buttonML_W, .buttonML_W:hover, .buttonML_W:focus,
+.buttonML_B, .buttonML_B:hover, .buttonML_B:focus {
   height: 38px;
   padding: 0px 15px;
   background-color: transparent; /*#313131;*/
+  font-family: 'Campton-Medium';
+  font-size: 12px;
+}
+.buttonML_W, .buttonML_W:hover, .buttonML_W:focus {
   border-bottom: 2px solid #fff;
   color:#fff;
 }
+.buttonML_B, .buttonML_B:hover, .buttonML_B:focus {
+  border-bottom: 2px solid #000000;
+  color:#000000;
+}
 
-.buttonTop {
+.buttonSTop_W, .buttonSTop_B,
+.buttonSNone_W, .buttonSNone_B {
+  position: absolute;
+  background-color: transparent;
+  letter-spacing: .1rem;
+  font-family: 'Campton-Medium';
+  font-size: 12px;
+  text-decoration: none;
+}
+.buttonSNone_W {
+  top: 0px;
+  color:#fff;
+}
+.buttonSTop_W {
   height: 25px;
   padding: 10px 15px;
-  background-color: transparent; /*#313131;*/
+  color:#fff;
   border-top: 2px solid #fff;
-  color:#fff;
-  letter-spacing: .1rem;
-  font-family: 'Campton-Medium';
-  font-size: 12px;
-  text-decoration: none;
 }
-
-.buttonNone {
-  position: absolute;
-  top: -18px;
-  height: 38px;
-  background-color: transparent; /*#313131;*/
-  border: none;
+.buttonMBottom_W {
+  height: 25px;
+  padding: 10px 15px;
   color:#fff;
-  letter-spacing: .1rem;
-  font-family: 'Campton-Medium';
-  font-size: 12px;
-  text-decoration: none;
+  border-bottom: 2px solid #fff;
 }
-
-.buttonNone2 {
-  position: absolute;
+.buttonSNone_B {
   top: 0px;
-  height: 38px;
-  background-color: transparent; /*#313131;*/
-  border: none;
-  color:#fff;
-  letter-spacing: .1rem;
-  font-family: 'Campton-Medium';
-  font-size: 12px;
-  text-decoration: none;
+  color:#000000;
 }
+.buttonSTop_B {
+  height: 25px;
+  padding: 10px 15px;
+  color:#000000;
+  border-top: 2px solid #000000;
+}
+
+
 
 #module button.collapsed:after  {
   content: 'M O R E';
-  font-family: 'Campton-Medium';
-  font-size: 12px;
-  /*text-decoration: none;*/
-  color:#fff;
 }
 
 #module button:not(.collapsed):after {
   content: 'L E S S';
-  font-family: 'Campton-Medium';
-  font-size: 12px;
-  text-decoration: none;
-  color:#fff;
 }
 
 .popup {
@@ -276,14 +277,30 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.card, .landing, .rms, .meaning,
+.card, .landing, .rms, .meaning, .contact,
 .mylifestory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.projects, .omm, .spaceman, .gospace, .cinema, .prescient, .engage,
+.projects, .omm, .spaceman, .gospace, .cinema, .prescient,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
   color: #fff;
+  padding-bottom: 5rem;
+  z-index: 1;
+}
+.cardB{
+  border-bottom: 1px solid #ddd;
+  background-size: cover;
+  background-color: #323334;
+  color: #fff;
+  padding-bottom: 5rem;
+  z-index: 1;
+}
+.cardW{
+  border-bottom: 1px solid #ddd;
+  background-size: cover;
+  background-color: #C0C0C0;
+  color: #000000;
   padding-bottom: 5rem;
   z-index: 1;
 }
@@ -297,6 +314,10 @@ tbody.collapse.in{display:table-row-group}
 .meaning {
   background-image: url('../images/Barbed_Wire-01.jpg');
 }
+.contact {
+  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01.jpg');
+}
+
 .mylifestory {
   background-image: url('../images/Hero.01_10_46_23.Still003-01.jpg');
 }
@@ -335,9 +356,7 @@ tbody.collapse.in{display:table-row-group}
   background-repeat: no-repeat;
   background-size: auto;
 }
-.engage {
-  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01.jpg');
-}
+
 .zaxis {
   background-image: url('../images/BraneWorld-01.jpg');
 }
