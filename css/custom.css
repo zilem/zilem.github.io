@@ -223,6 +223,7 @@ form .engage:hover {
   font-family: 'Campton-ExtraLight';
   font-size: 12px;
   color: #fff;
+  z-index: 1;
 }
 
 
@@ -275,11 +276,11 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .rms, .meaning,
+.card, .landing, .rms, .meaning,
 .mylifestory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .cinema, .prescient, .engage,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
-  /*border-bottom: 1px solid #ddd;*/
+  border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
   color: #fff;
@@ -296,13 +297,6 @@ tbody.collapse.in{display:table-row-group}
 .meaning {
   background-image: url('../images/Barbed_Wire-01.jpg');
 }
-.intro {
-  /*background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854.jpg');*/
-  background-size: cover;
-  color: #fff;
-  padding-bottom: 5rem;
-  z-index: 1;
-}
 .mylifestory {
   background-image: url('../images/Hero.01_10_46_23.Still003-01.jpg');
 }
@@ -316,7 +310,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720-01.jpg');
 }
 .calling {
-  background-image: url('../images/White_Gray_Teal_Air_Bus Under_1280x720-01.jpg');
+  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');
 }
 .meaning2 {
   background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');
