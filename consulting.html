@@ -154,6 +154,29 @@ body, html {
 function shareFunction(shareID) {
   document.getElementById(shareID).classList.toggle("show");
 }
+function wHShare(post_title) {
+  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"");
+}
+function tHShare(post_title) {
+  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function mHShare(post_title) {
+  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function fHShare(post_title) {
+  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function lHShare(post_title) {
+  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+}
+function gHShare(post_title) {
+  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,""));
+}
+function eHShare(post_title) {
+  window.open ('mailto:?subject=' + 'Real Moving Inspiring by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + post_title + '%0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
+}
+
+// SHARING POST
 function wShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
   window.location = 'whatsapp://send?text=' + post_title + byname + location.href.replace(location.hash,"") + '%23' + post;
