@@ -277,7 +277,7 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.card, .landing, .rms, .meaning, .contact,
+.landing, .rms, .meaning, .contact,
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .projects, .omm, .spaceman, .gospace, .cinema, .prescient,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
@@ -291,7 +291,8 @@ tbody.collapse.in{display:table-row-group}
 .cardB{
   border-bottom: 1px solid #ddd;
   background-size: cover;
-  background-color: #323334;
+  background-image: linear-gradient(#323334,#505050);
+  /*background-color: #323334;*/
   color: #fff;
   padding-bottom: 5rem;
   z-index: 1;
@@ -299,7 +300,8 @@ tbody.collapse.in{display:table-row-group}
 .cardW{
   border-bottom: 1px solid #ddd;
   background-size: cover;
-  background-color: #C0C0C0;
+  background-image: linear-gradient(#C0C0C0,#808080);
+  /*background-color: #C0C0C0;*/
   color: #000000;
   padding-bottom: 5rem;
   z-index: 1;
