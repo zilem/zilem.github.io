@@ -30,7 +30,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
-  width: 70%;
+  width: 75%;
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
@@ -51,7 +51,7 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container, .containercontact {
-    width: 70%;
+    width: 75%;
     padding: 0; }
 }
 
