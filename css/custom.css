@@ -310,7 +310,6 @@ tbody.collapse.in{display:table-row-group}
   border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
-  color: #fff;
   padding-bottom: 5rem;
   z-index: 1;
 }
@@ -362,26 +361,28 @@ tbody.collapse.in{display:table-row-group}
   color: #313131;
 }
 .meaning {
+  color: #fff;
   background-image: url('../images/Barbed_Wire-01.jpg');
 }
 .contact {
-  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01.jpg');
+  color: #323334;
+  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01-min.jpg');
 }
 
 .mystory {
-  background-image: url('../images/Hero.01_10_46_23.Still003-01.jpg');
+  background-image: url('../images/Hero.01_10_46_23.Still003-01-min.jpg');
 }
 .meaningless {
-  background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670-01.jpg');
+  background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670-01-min.jpg');
 }
 .inspiration {
-  background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854-01.jpg');
+  background-image: url('../images/Ocean_Jellyfishes_Aquarium_1280x854-01-min.jpg');
 }
 .empathy {
-  background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720-01.jpg');
+  background-image: url('../images/Grand_Canyon_Under_Black_Sky_1280x720-01-min.jpg');
 }
 .calling {
-  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');
+  background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01-min.jpg');
 }
 .meaning2 {
   background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');

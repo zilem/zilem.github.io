@@ -263,8 +263,8 @@ input[type="button"] {
   border: 0px;
   font-family: "Times New Roman", Times, serif;
   font-size: 12px;
-  border-bottom: 1px solid #FFF;
-  color:#FFF;
+  border-bottom: 1px solid #000000;
+  color:#000000;
   /*border: 1px solid #bbb;*/
   cursor: pointer;
   box-sizing: border-box; }
