@@ -305,7 +305,7 @@ tbody.collapse.in{display:table-row-group}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .rms, .meaning, .contact,
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.projects, .omm, .spaceman, .gospace, .cinema, .prescient,
+.films, .omm, .spaceman, .gospace, .cinema, .prescient,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
@@ -387,14 +387,14 @@ tbody.collapse.in{display:table-row-group}
 .meaning2 {
   background-image: url('../images/Sea_Clouds_Boat_Ship_1280x853-01.jpg');
 }
-.projects {
-  background-image: url('../images/Festival_Music_Rock_Sound_1280x854.jpg');
+.films {
+  background-image: url('../images/Green_Pine_Trees_Covered With_1280x854-01-min.jpg');
 }
 .omm {
-  background-image: url('../images/God_Bless_You-01.jpg');
+  background-image: url('../images/God_Bless_You-01-min.jpg');
 }
 .spaceman {
-  background-image: url('../images/Spacesuit-01.jpg');
+  background-image: url('../images/Spacesuit-01-min.jpg');
 }
 .gospace {
   background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854.jpg');
@@ -403,7 +403,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/Blue_Body_of_Water_Near_in_1280x854-01.jpg');
 }
 .prescient {
-  background-image: url('../images/PRESCIENT_R02_01-01.jpg');
+  background-image: url('../images/PRESCIENT_R02_01-01-min.jpg');
   background-repeat: no-repeat;
   background-size: auto;
 }
