@@ -308,7 +308,7 @@ tbody.collapse.in{display:table-row-group}
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .films, .omm, .spaceman, .gospace, .cinema, .prescient,
 .consulting,
-.zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
+.blog, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
   /*background-color: #fff;*/
@@ -411,7 +411,7 @@ tbody.collapse.in{display:table-row-group}
 .consulting {
   background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854-01-min.jpg');
 }
-.zaxis {
+.blog {
   background-image: url('../images/Wormhole-01-min.jpg');
 }
 .respect {
