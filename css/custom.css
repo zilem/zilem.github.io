@@ -307,6 +307,7 @@ tbody.collapse.in{display:table-row-group}
 .landing, .rms, .meaning, .contact,
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .films, .omm, .spaceman, .gospace, .cinema, .prescient,
+.consulting,
 .zaxis, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   border-bottom: 1px solid #ddd;
   background-size: cover;
@@ -367,9 +368,8 @@ tbody.collapse.in{display:table-row-group}
 }
 .contact {
   color: #323334;
-  background-image: url('../images/Explosion_Fire_Smoke_Dance_1280x854-01-min.jpg');
+  background-image: url('../images/curiosity-rover-lead-01-min.jpg');
 }
-
 .mystory {
   background-image: url('../images/Hero.01_10_46_23.Still003-01-min.jpg');
 }
@@ -408,7 +408,9 @@ tbody.collapse.in{display:table-row-group}
   background-repeat: no-repeat;
   background-size: auto;
 }
-
+.consulting {
+  background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854-01-min.jpg');
+}
 .zaxis {
   background-image: url('../images/BraneWorld-01.jpg');
 }
