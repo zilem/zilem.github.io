@@ -14,7 +14,7 @@ body {
   box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
   overflow: scroll;
   border-radius: 3px;
-  background: #313131;
+  background: #c0c0c0;
 }
 .window .header {
   position: absolute;
