@@ -23,7 +23,8 @@ body {
   left: 0;
   height: 48px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: #fff;
+  opacity: 0.9;
   overflow: hidden;
   transition: all 0.5s ease-out, background 1s ease-out;
   transition-delay: 0.2s;
@@ -57,7 +58,7 @@ body {
   height: 1px;
   display: block;
   position: relative;
-  background: #FFF;
+  background: #c5000b;
   transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition-delay: 0s;
 }
@@ -109,7 +110,7 @@ body {
   list-style: none;
 }
 .window .header ul.menu li.menu-item {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #c0c0c0;
   margin-top: 5px;
   -webkit-transform: scale(1.15) translateY(-30px);
           transform: scale(1.15) translateY(-30px);
@@ -142,7 +143,7 @@ body {
 .window .header ul.menu li.menu-item a {
   display: block;
   position: relative;
-  color: #FFF;
+  color: #c5000b;
   font-family: "Times New Roman", Times, serif;
   /*font-weight: 100;*/
   text-decoration: none;
@@ -153,7 +154,8 @@ body {
 }
 .window .header.menu-opened {
   height: 100%;
-  background-color: #000;
+  background-color: #fff;
+  opacity: 0.95;
   transition: all 0.3s ease-in, background 0.5s ease-in;
   transition-delay: 0.25s;
 }
