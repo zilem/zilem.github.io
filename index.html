@@ -59,7 +59,7 @@ body, html {
         <div class="bar btmBar"></div>
       </div>
     </div>
-    <div class="icon icon-apple"><a href="/"><img src="favicon4_250x250w.png" width="90%" height="90%"></a></div>
+    <div class="icon icon-apple"><a href="/"><img src="favicon4_250x250s.png" width="90%" height="90%"></a></div>
     <ul class="menu">
       <li class="menu-item"><a href="/">Vision</a></li>
       <li class="menu-item"><a href="mystory.html">My Story</a></li>
@@ -68,7 +68,7 @@ body, html {
       <li class="menu-item"><a href="blog.html">Blog</a></li>
     </ul>
     <div class="shop icon icon-bag"><a href="/#Contact" style="text-decoration:none;">
-      <font color="#fff">@</font></a></div>
+      <font color="#c5000b">@</font></a></div>
   </div>
 
 
@@ -118,7 +118,7 @@ body, html {
   </div>-->
 
 
-  <div class="section meaning">
+  <div class="section meaning2">
     <div class="container" id="module">
       <h2 class="section-heading">Man's Search for Meaning.</h2>
       <br>
@@ -131,7 +131,7 @@ body, html {
         to survive in a world of mind-numbing materialism.
       </p>
       <br>
-      <div class='buttonSTop_W popup' onclick="shareFunction('MeaningShare')">S H A R E
+      <div class='buttonSTop_B popup' onclick="shareFunction('MeaningShare')">S H A R E
         <span class="popuptext" id="MeaningShare">
           <span onclick="wHShare('Man&#8216;s Search for Meaning.')"><img src='images/whatsapp24.png'></span>&nbsp;
           <span onclick="tHShare('Man&#8216;s Search for Meaning.')"><img src='images/twitter24.png'></span>&nbsp;
@@ -146,7 +146,7 @@ body, html {
   </div>
 
 
-  <div class="minisection cardB" id="Intro">
+  <div class="minisection cardR" id="Intro">
     <div class="container" id="module">
       <img src="images/IMDB_7362_220x220circle_border.png" style="display:block;margin-left:auto;margin-right:auto;width:100%;max-width:150px">
       <br>
@@ -201,7 +201,7 @@ body, html {
       <h1 class="section-heading">What I do.</h1>
       <br>
       <!--<img src="images/ObserveW.png" height="100px">-->
-      <font color="#b8162f">
+      <font color="#c5000b">
       <h4 style="margin-bottom:-10px;">a.</h4>
       <h6 class="tagline">SCREENWRITING</h6>
       </font>
@@ -213,7 +213,7 @@ body, html {
       <br><br><br><br><br><br>
 
       <!--<img src="images/ProtestW.png" height="100px">-->
-      <font color="#b8162f">
+      <font color="#c5000b">
       <h4 style="margin-bottom:-10px;">b.</h4>
       <h6 class="tagline">FILMMAKING</h6>
       </font>
@@ -225,7 +225,7 @@ body, html {
       <br><br><br><br><br><br>
 
       <!--<img src="images/FunnelW.png" height="100px">-->
-      <font color="#b8162f">
+      <font color="#c5000b">
       <h4 style="margin-bottom:-10px;">c.</h4>
       <h6 class="tagline">STORY CONSULTING</h6>
       </font>
@@ -252,9 +252,9 @@ body, html {
 
   <div class="section contact" id="Contact">
     <div class="container">
+      <h2 class="section-heading">Hello Stranger!</h2>
+      <br>
       <div class="para">
-        <h2 class="section-heading">Hello Stranger!</h2>
-        <br>
         <form method="post" action="https://formspree.io/story@zilem.studio"><!--action="handler.php"-->
           <!--<div class="row">
             <div class="six columns">
@@ -312,62 +312,7 @@ body, html {
 
 <script src="js/index.js"></script>
 <script src="js/share.js"></script>
-<script type="text/javascript">
-/*function shareFunction(shareID) {
-  document.getElementById(shareID).classList.toggle("show");
-}
-function wHShare(post_title) {
-  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"");
-}
-function tHShare(post_title) {
-  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,""));
-}
-function mHShare(post_title) {
-  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
-}
-function fHShare(post_title) {
-  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,""));
-}
-function lHShare(post_title) {
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
-}
-function gHShare(post_title) {
-  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,""));
-}
-function eHShare(post_title) {
-  window.open ('mailto:?subject=' + 'Real Moving Inspiring by Zi R. Lem, Screenwriter-Filmmaker ' + '&body=Thought you might like this: %0A%0A' + post_title + '%0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
-}
 
-// SHARING POST
-function wShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.location = 'whatsapp://send?text=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post;
-}
-function tShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://twitter.com/intent/tweet?text=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
-}
-function mShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
-}
-function fShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
-}
-function lShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
-}
-function gShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('https://plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,"") + '%23' + post);
-}
-function eShare(post,post_title) {
-  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('mailto:?subject=' + post_title + '&body=Thought you might like this: %0A%0A' + location.href.replace(location.hash,"") + "#" + post + "%0A%0A" + document.getElementsByTagName("meta")[5].content);
-}*/
-</script>
 
 
 <!-- End Document
