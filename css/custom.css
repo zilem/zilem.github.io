@@ -236,6 +236,7 @@ form .engage:hover {
 .firstpara, .para {
   padding: 0rem 0 0rem;
   text-align: justify;
+  text-justify: inter-word;
   z-index: 9999;
 }
 
