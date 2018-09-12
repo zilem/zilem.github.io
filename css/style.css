@@ -24,7 +24,6 @@ body {
   height: 48px;
   width: 100%;
   /*background: #fff;*/
-  opacity: 1.0;
   overflow: hidden;
   transition: all 0.5s ease-out, background 1s ease-out;
   transition-delay: 0.2s;
@@ -155,7 +154,7 @@ body {
 .window .header.menu-opened {
   height: 100%;
   background-color: #fff;
-  opacity: 0.95;
+  opacity: 1.0;
   transition: all 0.3s ease-in, background 0.5s ease-in;
   transition-delay: 0.25s;
 }
