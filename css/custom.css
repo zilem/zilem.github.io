@@ -80,6 +80,14 @@
   content: 'L E S S';
 }
 
+#module button1.collapsed:after  {
+  content: 'M O R E';
+}
+
+#module button1:not(.collapsed):after {
+  content: 'E N G A G E';
+}
+
 .popup {
     position: relative;
     display: inline-block;
