@@ -366,7 +366,8 @@ tbody.collapse.in{display:table-row-group}
 .cardR{
   border-bottom: 1px solid #c0c0c0;
   background-size: cover;
-  background-color: #fff;
+  background-image: linear-gradient(#F5F5F5,#fff);
+  /*background-color: #fff;*/
   color: #000000;
   padding-bottom: 5rem;
   z-index: 1;
