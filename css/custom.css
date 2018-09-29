@@ -319,7 +319,7 @@ tbody.collapse.in{display:table-row-group}
 .films, .omm, .spaceman, .gospace, .cinema, .prescient,
 .consulting,
 .blog, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #ddd;*/
   background-size: cover;
   /*background-color: #fff;*/
   padding-bottom: 5rem;
@@ -364,9 +364,20 @@ tbody.collapse.in{display:table-row-group}
   /*font-family: "EncodeSansCompressed-100-Thin";*/
 }
 .cardR{
-  border-bottom: 1px solid #c0c0c0;
+  /*border-bottom: 1px solid #c0c0c0;*/
   background-size: cover;
-  background-image: linear-gradient(#F5F5F5,#fff);
+  background-image: linear-gradient(#DCDCDC,#FFF);
+  /*background-color: #fff;*/
+  color: #000000;
+  padding-bottom: 5rem;
+  z-index: 1;
+  font-weight: 100;
+}
+
+.cardS{
+  /*border-bottom: 1px solid #c0c0c0;*/
+  background-size: cover;
+  background-image: linear-gradient(#FFF,#DCDCDC);
   /*background-color: #fff;*/
   color: #000000;
   padding-bottom: 5rem;
@@ -393,7 +404,6 @@ tbody.collapse.in{display:table-row-group}
   background-image: url('../images/curiosity-rover-lead-01-min.jpg');
 }
 .mystory {
-  border-bottom: 1px solid #c0c0c0;
   background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670-01-min.jpg');
 }
 .meaningless {
