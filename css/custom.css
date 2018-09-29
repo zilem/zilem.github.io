@@ -369,7 +369,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: linear-gradient(#DCDCDC,#FFF);
   /*background-color: #fff;*/
   color: #000000;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   z-index: 1;
   font-weight: 100;
 }
@@ -380,7 +380,7 @@ tbody.collapse.in{display:table-row-group}
   background-image: linear-gradient(#FFF,#DCDCDC);
   /*background-color: #fff;*/
   color: #000000;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   z-index: 1;
   font-weight: 100;
 }
@@ -478,7 +478,7 @@ tbody.collapse.in{display:table-row-group}
 /* Bigger than 550 */
 @media (min-width: 550px) {
   .section {
-    padding: 12rem 0 11rem;
+    padding: 12rem 0 15rem;
   }
   .minisection {
     padding: 8rem 0 7rem;
