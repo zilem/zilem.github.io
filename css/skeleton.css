@@ -118,7 +118,7 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
-@font-face {font-family: "SF-Pro-Display-Thin";
+/*@font-face {font-family: "SF-Pro-Display-Thin";
       src: url('../fonts/SF/SF-Pro-Display-Thin.otf') format('opentype');}
 @font-face {font-family: "SF-Pro-Display-Ultralight";
             src: url('../fonts/SF/SF-Pro-Display-Ultralight.otf') format('opentype');}
@@ -171,7 +171,7 @@
 @font-face {font-family: "EncodeSansCompressed-200-ExtraLight";
       src: url('../fonts/EncodeSans/EncodeSansCompressed-200-ExtraLight.ttf') format('truetype');}
 @font-face {font-family: "EncodeSansCompressed-300-Light";
-      src: url('../fonts/EncodeSans/EncodeSansCompressed-300-Light.ttf') format('truetype');}
+      src: url('../fonts/EncodeSans/EncodeSansCompressed-300-Light.ttf') format('truetype');}*/
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
