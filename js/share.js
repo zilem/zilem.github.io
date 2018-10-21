@@ -13,7 +13,7 @@ function tHShare(post_title) {
 //  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
 //}
 function fHShare(post_title) {
-  window.open ('//facebook.com/sharer/sharer.php?u=' + location.href.replace(location.hash,"") + 'quote=' + post_title);
+  window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + location.href.replace(location.hash,""));
 }
 function lHShare(post_title) {
   window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
@@ -40,7 +40,7 @@ function tShare(post,post_title) {
 //}
 function fShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('//facebook.com/sharer/sharer.php?u=' + '%0A' + location.href.replace(location.hash,"") + '%23' + post + 'quote='+ post_title);
+  window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + location.href.replace(location.hash,"") + '%23' + post);
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
@@ -66,7 +66,7 @@ function tsubShare(subdomain,post_title) {
 //  window.open ('fb-messenger://share?link=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
 //}
 function fsubShare(subdomain,post_title) {
-  window.open ('//facebook.com/sharer/sharer.php?u=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
+  window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
 }
 function lsubShare(subdomain,post_title) {
   window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
