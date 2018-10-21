@@ -13,7 +13,7 @@ function tHShare(post_title) {
 //  window.open ('fb-messenger://share?link=' + post_title + '%0A' + location.href.replace(location.hash,""));
 //}
 function fHShare(post_title) {
-  window.open ('//facebook.com/sharer/sharer.php?u=' + '%0A' + location.href.replace(location.hash,"") + "quote=" + post_title);
+  window.open ('//facebook.com/sharer/sharer.php?u=' + location.href.replace(location.hash,"") + 'quote=' + post_title);
 }
 function lHShare(post_title) {
   window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
