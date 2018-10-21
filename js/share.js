@@ -16,7 +16,7 @@ function fHShare(post_title) {
   window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + location.href.replace(location.hash,""));
 }
 function lHShare(post_title) {
-  window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + location.href.replace(location.hash,"") + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+  window.open ('//linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%0A&title=' + post_title);
 }
 //function gHShare(post_title) {
 //  window.open ('//plus.google.com/share?url=' + post_title + '%0A' + location.href.replace(location.hash,""));
@@ -44,7 +44,7 @@ function fShare(post,post_title) {
 }
 function lShare(post,post_title) {
   var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
-  window.open ('//linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + post_title + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+  window.open ('//linkedin.com/shareArticle?mini=true&url=' + location.href.replace(location.hash,"") + '%23' + post + '%0A&title=' + post_title);
 }
 //function gShare(post,post_title) {
 //  var byname = '%0Aby Zi R. Lem, Screenwriter-Filmmaker%0A';
@@ -69,7 +69,7 @@ function fsubShare(subdomain,post_title) {
   window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
 }
 function lsubShare(subdomain,post_title) {
-  window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname + "%0A%0A" + '&summary=' + document.getElementsByTagName("meta")[5].content);
+  window.open ('//linkedin.com/shareArticle?mini=true&url=' + window.location.protocol + '//' + subdomain + "." + window.location.hostname + '%0A&title=' + post_title);
 }
 //function gsubShare(subdomain,post_title) {
 //  window.open ('//plus.google.com/share?url=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
