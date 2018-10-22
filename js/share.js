@@ -13,7 +13,7 @@ function fHShare(post_title) {
   window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + location.href.replace(location.hash,""));
 }
 function lHShare(post_title) {
-  window.open ('//linkedin.com/shareArticle?mini=true&url='+ post_title + location.href.replace(location.hash,""));
+  window.open ('//linkedin.com/shareArticle?mini=true&url='+ post_title + '%0A' + location.href.replace(location.hash,""));
 }
 function eHShare(post_title) {
   window.open ('mailto:?subject=' + post_title + '&body=Check this out: %0A%0A' + location.href.replace(location.hash,"") + "%0A%0A" + 'by Zi R. Lem, Screenwriter-Filmmaker');
