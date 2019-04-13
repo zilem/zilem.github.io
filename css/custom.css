@@ -316,7 +316,7 @@ tbody.collapse.in{display:table-row-group}
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .landing, .rms, .meaning, .contact,
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
-.films, .omm, .spaceman, .gospace, .cinema, .prescient,
+.films, .selfdefence, .spaceman, .gospace, .cinema, .prescient,
 .consulting,
 .blog, .respect, .oneword, .truestories, .church, .facts, .intersectionality, .language, .pragmatism {
   /*border-bottom: 1px solid #ddd;*/
@@ -422,11 +422,11 @@ tbody.collapse.in{display:table-row-group}
 .films {
   background-image: url('../images/Green_Pine_Trees_Covered With_1280x854-01-min.jpg');
 }
-.omm {
+.selfdefence {
   background-image: url('../images/GodBlessYou-01-min.jpg');
 }
 .spaceman {
-  background-image: url('../images/Spacesuit-01-min.jpg');
+  background-image: url('../images/Spacesuit-bg-2.jpg');
 }
 .gospace {
   background-image: url('../images/White_and_Blue_Cloudy_Sky_1280x854.jpg');
