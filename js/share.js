@@ -81,3 +81,14 @@ function esubShare(subdomain,post_title) {
 //function gsubShare(subdomain,post_title) {
 //  window.open ('//plus.google.com/share?url=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
 //}
+
+
+
+// REDIRECTING SUBDOMAIN
+function locationHashChanged() {
+    if (location.hash === "#Spaceman") {
+        window.location.replace("//spaceman.zilem.studio");
+    }
+}
+
+window.onhashchange = locationHashChanged;
