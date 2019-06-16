@@ -87,7 +87,7 @@ function esubShare(subdomain,post_title) {
 // REDIRECTING SUBDOMAIN
 function locationHashChanged() {
     if (location.hash === "#Spaceman") {
-        window.location.replace("//spaceman.zilem.studio");
+        window.location.replace("https://spaceman.zilem.studio");
     }
 }
 
