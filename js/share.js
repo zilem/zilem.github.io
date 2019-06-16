@@ -87,7 +87,7 @@ function esubShare(subdomain,post_title) {
 // REDIRECTING SUBDOMAIN
 function locationHashChanged() {
     if (window.location.href == "https://films.zilem.studio/#Spaceman") {
-        window.location.replace("https://spaceman.zilem.studio");
+        window.location.assign("https://spaceman.zilem.studio");
     }
 }
 
