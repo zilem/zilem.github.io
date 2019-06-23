@@ -314,7 +314,7 @@ tbody.collapse.in{display:table-row-group}
 
 /* Background Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.landing, .rms, .meaning, .contact,
+.landing, .rms, .meaning, .contact, .mission
 .mystory, .meaningless, .inspiration, .empathy, .calling, .meaning2,
 .films, .sheepwolf, .spaceman, .gospace, .cinema, .prescient,
 .consulting, .worldvision,
@@ -402,6 +402,9 @@ tbody.collapse.in{display:table-row-group}
 .contact {
   color: #323334;
   background-image: url('../images/curiosity-rover-lead-01-min.jpg');
+}
+.mission {
+  background-image: url('../images/Black_And_White_Clouds_Cold_1280x960-min-01.jpg');
 }
 .mystory {
   background-image: url('../images/Debris_Plane_Destroyed_Wreck_1280x670-01-min.jpg');
