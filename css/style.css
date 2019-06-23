@@ -9,7 +9,7 @@ body {
   position: relative;
   display: block;
   width: 360px;
-  height: 650px;
+  height: 567px;
   margin: 100px auto 0;
   box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
   overflow: scroll;
@@ -139,6 +139,9 @@ body {
 .window .header ul.menu li.menu-item:nth-child(7) {
   transition-delay: 0.07s;
 }
+.window .header ul.menu li.menu-item:nth-child(8) {
+  transition-delay: 0.00s;
+}
 .window .header ul.menu li.menu-item a {
   display: block;
   position: relative;
@@ -199,6 +202,9 @@ body {
 }
 .window .header.menu-opened ul.menu li.menu-item:nth-child(7) {
   transition-delay: 0.69s;
+}
+.window .header.menu-opened ul.menu li.menu-item:nth-child(8) {
+  transition-delay: 0.76s;
 }
 .window .header.menu-opened .icon.icon-bag {
   -webkit-transform: translateX(75px);
