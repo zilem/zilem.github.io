@@ -90,8 +90,8 @@ body {
   pointer-events: none;
 }*/
 .window .header .icon.icon-home {
-  right: -75px;
-  top: 0;
+  right: 0;
+  top: -50px;
   left: auto;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -227,8 +227,8 @@ body {
   transition-delay: 0.3s;
 }
 .window .header.menu-opened .icon.icon-home {
-  -webkit-transform: translateX(-75px);
-          transform: translateX(-75px);
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   transition-delay: 0.6s;
 }
 .window .content {
