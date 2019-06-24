@@ -90,11 +90,11 @@ body {
   pointer-events: none;
 }*/
 .window .header .icon.icon-home {
-  top: -20px;
-  display: block;
-  margin: 0 auto;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  right: -50px;
+  top: 10px;
+  left: auto;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
   transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -227,8 +227,8 @@ body {
   transition-delay: 0.3s;
 }
 .window .header.menu-opened .icon.icon-home {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  -webkit-transform: translateX(-75px);
+          transform: translateX(-75px);
   transition-delay: 0.5s;
 }
 .window .content {
