@@ -18,7 +18,7 @@
 .buttonML_W, .buttonML_W:hover, .buttonML_W:focus,
 .buttonML_B, .buttonML_B:hover, .buttonML_B:focus {
   height: 38px;
-  padding: 0px 15px;
+  padding: 0px 45px;
   background-color: transparent; /*#313131;*/
   font-family: "Times New Roman", Times, serif;
   font-size: 12px;
@@ -42,7 +42,6 @@
   font-size: 12px;
   font-weight: 500;
   text-decoration: none;
-  margin-bottom: 10px;
 }
 .buttonSNone_W {
   top: 0px;
