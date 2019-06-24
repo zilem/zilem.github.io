@@ -89,6 +89,19 @@ body {
 /*.window .header .icon .icon-apple {
   pointer-events: none;
 }*/
+.window .header .icon.icon-home {
+  right: -75px;
+  top: 0;
+  left: auto;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transition-delay: 0.50s;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
 .window .header .icon.icon-bag {
   right: 0;
   top: 0;
@@ -109,19 +122,6 @@ body {
   list-style: none;
 }
 
-.window .header ul.menu .icon.icon-home{
-  right: 0;
-  top: 0;
-  left: auto;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-  transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-  transition-delay: 0.50s;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-}
 
 .window .header ul.menu li.menu-item {
   border-bottom: 1px solid #c0c0c0;
