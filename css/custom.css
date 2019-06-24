@@ -76,6 +76,7 @@
 #module button.collapsed:after  {
   content: 'Learn More';
   font-style: italic;
+  color:#c5000b;
 }
 
 #module button:not(.collapsed):after {
