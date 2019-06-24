@@ -86,9 +86,9 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-.window .header .icon .icon-apple {
+/*.window .header .icon .icon-apple {
   pointer-events: none;
-}
+}*/
 .window .header .icon.icon-home {
   right: -75px;
   top: 0;
