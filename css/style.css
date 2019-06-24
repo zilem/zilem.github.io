@@ -91,7 +91,7 @@ body {
 }*/
 .window .header .icon.icon-home {
   right: -50px;
-  top: 10px;
+  top: 15px;
   left: auto;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
