@@ -98,7 +98,7 @@ body {
   transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99), -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-  transition-delay: 0.50s;
+  transition-delay: 1.00s;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
 }
