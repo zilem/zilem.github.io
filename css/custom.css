@@ -17,7 +17,7 @@
 
 .buttonML_W, .buttonML_W:hover, .buttonML_W:focus,
 .buttonML_B, .buttonML_B:hover, .buttonML_B:focus {
-  height: 68px;
+  height: 50px;
   margin-top: -40px;
   padding: 0px 15px;
   background-color: transparent; /*#313131;*/
