@@ -18,10 +18,11 @@
 .buttonML_W, .buttonML_W:hover, .buttonML_W:focus,
 .buttonML_B, .buttonML_B:hover, .buttonML_B:focus {
   height: 38px;
+  width: 100px;
   padding: -20px 15px 0px;
   background-color: transparent; /*#313131;*/
   font-family: "Times New Roman", Times, serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
 }
 .buttonML_W, .buttonML_W:hover, .buttonML_W:focus {
