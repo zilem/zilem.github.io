@@ -92,7 +92,7 @@ body {
 .window .header .icon.icon-home {
   top: -50px;
   left: auto;
-  right: auto;
+  right: 50%;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
   transition: -webkit-transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -227,8 +227,8 @@ body {
   transition-delay: 0.3s;
 }
 .window .header.menu-opened .icon.icon-home {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(75px);
+          transform: translateY(75px);
   transition-delay: 0.6s;
 }
 .window .content {
