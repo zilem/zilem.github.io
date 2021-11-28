@@ -40,6 +40,28 @@ function liShare(post_title, pagepost) {
 
 
 
+// SHARING SUBDOMAIN
+function wsubShare(post_title, subdomain) {
+  window.location = 'whatsapp://send?text=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname;
+}
+function lsubShare(post_title, subdomain) {
+  window.open ('//linkedin.com/shareArticle?mini=true&url=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
+}
+function tsubShare(post_title, subdomain) {
+  window.open ('//twitter.com/intent/tweet?text=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
+}
+function tesubShare(post_title, subdomain) {
+  window.location = 'tg://msg_url?text=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname;
+}
+function fsubShare(post_title, subdomain) {
+  window.open ('//facebook.com/sharer/sharer.php?quote=' + post_title + '&u=' + window.location.protocol + '//' + subdomain + "." + window.location.hostname);
+}
+function esubShare(post_title, subdomain) {
+  window.open ('mailto:?subject=' + post_title + '&body=Check this out: %0A%0A' + window.location.protocol + '//' +  subdomain + "." +window.location.hostname + "%0A%0A" + 'by Zi R. Lem, Screenwriter-Filmmaker');
+}
+
+
+
 // SHARING SUBDOMAIN PAGE
 function wasubpShare(subdomain,page,post_title) {
   window.location = 'whatsapp://send?text=' + post_title + '%0A' + window.location.protocol + '//' + subdomain + "." + window.location.hostname + "/" + page + ".html";
