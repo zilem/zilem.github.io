@@ -239,14 +239,14 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Simplifica';
     src: url('/fonts/simplifica-webfont.woff2') format('woff2'),
          url('/fonts/simplifica-webfont.woff') format('woff'),
          url('/fonts/simplifica-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 /*@font-face {font-family: "SF-Pro-Display-Thin";
       src: url('../fonts/SF/SF-Pro-Display-Thin.otf') format('opentype');}
@@ -330,7 +330,7 @@ body {
 
 /* h0 - section-heading */
 h0 {
-  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", 'Simplifica', 'Open Sans Condensed',  Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", 'Open Sans Condensed',  Helvetica, sans-serif;
   font-weight:300;
   /*font-stretch:condensed;*/
   }
@@ -344,7 +344,7 @@ h9, h10 {
 
 /* h1 - section-heading */
 h1, h2, h3 {
-  font-family: 'Simplifica', 'Open Sans Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Open Sans Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
   font-weight:300;
   /*font-family: "Times New Roman", Times, serif;
   font-stretch:condensed;

@@ -231,7 +231,7 @@ form .engage:hover {
 
 /* Style that first letter! */
 .firstpara::first-letter {
-  font-family: 'Simplifica', 'Open Sans Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Open Sans Condensed', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
   float: left;
   font-size: 60px;
   line-height: 50px;
